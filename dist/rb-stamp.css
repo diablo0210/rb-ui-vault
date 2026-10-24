@@ -1,0 +1,378 @@
+/* ==========================================================================
+   RED BANANA UNIVERSAL STAMP WIDGET (rb-stamp.css)
+   Signature Floating Circular Control Pod for All Red Banana Websites:
+   1. Language Toggle (EN / Hindi)
+   2. Theme Mode (Dark / Light)
+   3. Render Quality (HD 3D / Lite Mode)
+   4. Accessibility Suite (Font Scale 100%/115%/130%, High Contrast, Links, Motion)
+   Strictly >= 44x44px touch targets, >= 12px typography, zero overflow.
+   ========================================================================== */
+
+:root {
+  --rb-stamp-z: 99990;
+  --rb-pod-bg: rgba(17, 13, 22, 0.96);
+  --rb-pod-surface: #1E1726;
+  --rb-pod-border: #4A3A55;
+  --rb-pod-text: #F7EDF2;
+  --rb-pod-subtext: #B9AAB9;
+  --rb-pod-accent: #C42A68;
+  --rb-pod-emerald: #4CC08A;
+  --rb-pod-crimson: #B32137;
+  --rb-pod-amber: #F2C14E;
+  --rb-pod-accent-tint: rgba(196, 42, 104, 0.18);
+  --rb-pod-emerald-tint: rgba(76, 192, 138, 0.2);
+  --rb-pod-glow: 196, 42, 104;
+}
+
+html[data-rb-theme="light"] {
+  --rb-pod-bg: rgba(255, 255, 255, 0.97);
+  --rb-pod-surface: #F8EDF2;
+  --rb-pod-border: #D8C8D3;
+  --rb-pod-text: #1F1426;
+  --rb-pod-subtext: #5E4C60;
+  --rb-pod-accent: #96205F;
+  --rb-pod-emerald: #17643F;
+  --rb-pod-accent-tint: rgba(150, 32, 95, 0.18);
+  --rb-pod-emerald-tint: rgba(23, 100, 63, 0.2);
+}
+
+/* Global Accessibility & Quality Hooks Applied by the Stamp */
+html[data-rb-font-scale="115"] {
+  font-size: 112% !important;
+}
+
+html[data-rb-font-scale="130"] {
+  font-size: 122% !important;
+}
+
+html[data-rb-contrast="high"] {
+  filter: contrast(1.18) saturate(1.1);
+}
+
+html[data-rb-links="underline"] a,
+html[data-rb-links="underline"] button {
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+html[data-rb-motion="reduced"] *,
+html[data-rb-motion="reduced"] *::before,
+html[data-rb-motion="reduced"] *::after,
+html[data-rb-quality="lite"] *,
+html[data-rb-quality="lite"] *::before,
+html[data-rb-quality="lite"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+html[data-rb-quality="lite"] .rb-hd-only {
+  display: none !important;
+}
+
+/* Floating Circular Trigger Button (54x54px) */
+.rb-stamp-root {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: var(--rb-stamp-z);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.35;
+  user-select: none;
+}
+
+.rb-stamp-root[data-pos="bottom-left"] {
+  right: auto;
+  left: 16px;
+}
+
+.rb-stamp-trigger {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #16101C 0%, #2A1230 100%);
+  border: 2px solid var(--rb-pod-accent);
+  color: #FFFFFF;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5), 0 0 0 3px rgba(var(--rb-pod-glow), 0.22);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  touch-action: none;
+}
+
+.rb-stamp-trigger:hover {
+  border-color: var(--rb-pod-amber);
+  box-shadow: 0 12px 32px rgba(var(--rb-pod-glow), 0.45), 0 0 0 4px rgba(var(--rb-pod-glow), 0.3);
+}
+
+.rb-stamp-trigger[aria-expanded="true"] {
+  background: linear-gradient(135deg, var(--rb-pod-crimson) 0%, #C42A68 100%);
+  border-color: var(--rb-pod-amber);
+}
+
+.rb-stamp-monogram {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #F7EDF2;
+  display: block;
+}
+
+.rb-stamp-sublabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--rb-pod-amber);
+  display: block;
+}
+
+.rb-stamp-trigger[aria-expanded="true"] .rb-stamp-sublabel {
+  color: #F7EDF2;
+}
+
+.rb-stamp-status-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--rb-pod-emerald);
+  border: 2px solid #110D16;
+}
+
+/* Expandable Control Pod */
+.rb-stamp-pod {
+  position: fixed;
+  right: 16px;
+  bottom: 82px;
+  width: 348px;
+  max-width: calc(100vw - 24px);
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  background: var(--rb-pod-bg);
+  border: 1px solid var(--rb-pod-border);
+  border-radius: 18px;
+  padding: 14px;
+  color: var(--rb-pod-text);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(16px);
+  z-index: var(--rb-stamp-z);
+}
+
+.rb-stamp-root[data-pos="bottom-left"] .rb-stamp-pod {
+  right: auto;
+  left: 16px;
+}
+
+.rb-stamp-pod.rb-hidden {
+  display: none !important;
+}
+
+.rb-pod-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rb-pod-border);
+  margin-bottom: 10px;
+}
+
+.rb-pod-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rb-pod-seal {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--rb-pod-crimson), #C42A68);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rb-pod-title {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--rb-pod-text);
+  display: block;
+}
+
+.rb-pod-subtitle {
+  font-size: 12px;
+  color: var(--rb-pod-subtext);
+  display: block;
+}
+
+.rb-pod-close {
+  background: var(--rb-pod-surface);
+  border: 1px solid var(--rb-pod-border);
+  color: var(--rb-pod-text);
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+/* 2x2 Primary Stamp Quadrant Grid (Lang, Theme, HD/Lite, Dock Side) */
+.rb-quadrant-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.rb-quad-btn {
+  background: var(--rb-pod-surface);
+  border: 1px solid var(--rb-pod-border);
+  color: var(--rb-pod-text);
+  border-radius: 12px;
+  min-height: 52px;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.rb-quad-btn:hover {
+  border-color: var(--rb-pod-accent);
+}
+
+.rb-quad-btn[data-active="true"] {
+  background: var(--rb-pod-accent-tint);
+  border-color: var(--rb-pod-accent);
+}
+
+.rb-quad-kicker {
+  font-size: 12px;
+  color: var(--rb-pod-subtext);
+  font-weight: 600;
+}
+
+.rb-quad-val {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--rb-pod-text);
+  margin-top: 2px;
+}
+
+/* Accessibility Section Inside Pod */
+.rb-a11y-box {
+  background: var(--rb-pod-surface);
+  border: 1px solid var(--rb-pod-border);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.rb-a11y-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--rb-pod-subtext);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.rb-scale-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.rb-scale-btn {
+  background: transparent;
+  border: 1px solid var(--rb-pod-border);
+  color: var(--rb-pod-text);
+  min-height: 44px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rb-scale-btn.active {
+  background: var(--rb-pod-accent);
+  border-color: var(--rb-pod-accent);
+  color: #FFFFFF;
+}
+
+.rb-a11y-toggles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.rb-a11y-chip {
+  background: transparent;
+  border: 1px solid var(--rb-pod-border);
+  color: var(--rb-pod-text);
+  min-height: 44px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rb-a11y-chip[aria-pressed="true"] {
+  background: var(--rb-pod-emerald-tint);
+  border-color: var(--rb-pod-emerald);
+  color: var(--rb-pod-emerald);
+}
+
+.rb-pod-footer {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.rb-reset-btn {
+  width: 100%;
+  min-height: 44px;
+  background: transparent;
+  border: 1px solid var(--rb-pod-border);
+  color: var(--rb-pod-subtext);
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rb-reset-btn:hover {
+  color: var(--rb-pod-text);
+  border-color: var(--rb-pod-accent);
+}
+
+@media (max-width: 420px) {
+  .rb-stamp-pod {
+    right: 12px;
+    left: 12px;
+    width: auto;
+  }
+}

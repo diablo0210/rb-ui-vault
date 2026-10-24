@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Banana UI &amp; Motion Vault | @code_x_sg Replicated Interactive Library</title>
+  <meta name="description" content="Interactive 3D buttons, liquid glass UI controls, tactile toggles, dropdowns, and landing page animations replicated from @code_x_sg for Red Banana Studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700;800&family=Parkinsans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Syne:wght@700;800&family=Tektur:wght@700;800&family=Tomorrow:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="rb-stamp.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Hidden SVG Filters for Gooey Liquid Nav, Fluffy Plush Fur, and iOS 26 Optical Glass Refraction -->
+  <svg class="svg-filters" aria-hidden="true">
+    <defs>
+      <filter id="gooey-filter">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+        <feColorMatrix in="blur" mode="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+      <filter id="fluffy-fur">
+        <feTurbulence type="fractalNoise" baseFrequency="0.18" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+      </filter>
+      <filter id="ios26-refract">
+        <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" result="lensNoise" />
+        <feDisplacementMap in="SourceGraphic" in2="lensNoise" scale="18" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Sticky Vault Header -->
+  <header class="vault-header">
+    <div class="vault-header-inner">
+      <div class="brand-block">
+        <div class="brand-orb">RB</div>
+        <div>
+          <div class="brand-title">Red Banana UI &amp; Motion Vault</div>
+          <div class="brand-sub">52 Categorized Designs • 39 Live Interactive Stages • Code &amp; Fullscreen Inspector</div>
+        </div>
+      </div>
+
+      <nav class="filter-pills" aria-label="Category Filter">
+        <button class="filter-pill active" data-filter="all">All Views (52 Table + 39 Live Stages)</button>
+        <button class="filter-pill" data-filter="table">00. Master Tabulated Index (52)</button>
+        <button class="filter-pill" data-filter="buttons">01. Buttons (8)</button>
+        <button class="filter-pill" data-filter="controls">02. Toggles, Sliders &amp; Nav (9)</button>
+        <button class="filter-pill" data-filter="cards">03. Cards &amp; Checkouts (6)</button>
+        <button class="filter-pill" data-filter="landings">04. Landing Pages &amp; 3D Heroes (8)</button>
+        <button class="filter-pill" data-filter="signatures">05. Shaders, Fonts, Palettes &amp; 3D Lab (12)</button>
+        <button class="filter-pill" data-filter="archive">06. Visual Reference Grid (52)</button>
+        <button class="filter-pill" id="toggleClientLockBtn" style="border-color:var(--accent-amber);color:var(--accent-amber);" type="button">🔒 Client Gate &amp; Share Link</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Private Password-Enabled Client View Gate -->
+  <div class="client-gate-overlay" id="clientGateOverlay">
+    <div class="client-gate-card">
+      <div class="brand-orb" style="margin:0 auto 14px;width:54px;height:54px;font-size:1.2rem;">RB</div>
+      <div class="hero-badge">Private Client Component Marketplace</div>
+      <h2 style="font-size:1.55rem;margin-bottom:8px;">Red Banana UI &amp; Motion Vault</h2>
+      <p style="font-size:0.88rem;color:var(--text-muted);">Enter your client access passcode to explore and shortlist interactive 3D buttons, toggles, and landing page animations for your project.</p>
+      <input type="password" id="clientPassInput" class="gate-input" placeholder="Enter Passcode (REDBANANA)" aria-label="Client Passcode" />
+      <div id="gateErrorMsg" style="color:#f87171;font-size:0.8rem;min-height:20px;margin-bottom:6px;"></div>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+        <button class="copy-btn" id="unlockGateBtn" style="background:var(--accent-amber);color:#090b10;padding:0 24px;" type="button">Unlock Marketplace →</button>
+        <button class="copy-btn" id="copyVipLinkBtn" type="button">📋 Copy Client Share Link + Passcode</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Overview -->
+    <section class="vault-hero">
+      <div>
+        <div class="hero-badge">Internal Design System &amp; Living Component Registry</div>
+        <h1>Tactile 3D Buttons, Liquid Glass &amp; Hero Stages.</h1>
+        <p>Every button, toggle, dropdown, interactive card, and landing page animation scraped from @code_x_sg and future Instagram design handles, categorized and tabulated in one permanent library. Search or filter the master table below, test the 24 live interactive replicas, and click <strong>Use ID</strong> to drop any design into a client project.</p>
+      </div>
+      <div class="hero-stats-card">
+        <div class="stat-box">
+          <div class="stat-num" id="statTotalScraped">36</div>
+          <div class="stat-lbl">Categorized &amp; Tabulated Designs</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">24</div>
+          <div class="stat-lbl">Live Interactive Replications</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">5</div>
+          <div class="stat-lbl">Core UI Categories</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">Live</div>
+          <div class="stat-lbl">Continuously Updated Registry</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 0: MASTER CATEGORIZED & TABULATED DESIGN REGISTRY -->
+    <section class="vault-section" data-category="table" id="masterRegistrySection">
+      <div class="section-head">
+        <h2>00. Master Categorized &amp; Tabulated Design Index (All 36 Items)</h2>
+        <span>Search by keyword, category, animation style, or component ID (BTN-*, CTL-*, CRD-*, LND-*)</span>
+      </div>
+
+      <div class="registry-toolbar">
+        <input
+          type="search"
+          id="registrySearchInput"
+          class="registry-search"
+          placeholder="Search buttons, liquid glass, jelly, toggle, dropdown, landing page, suitcase, calculator..."
+          aria-label="Search UI Library"
+        />
+        <div class="filter-pills" id="tableCatPills">
+          <button class="filter-pill active" data-tcat="ALL" type="button">All Categories (36)</button>
+          <button class="filter-pill" data-tcat="Buttons" type="button">Buttons</button>
+          <button class="filter-pill" data-tcat="Toggles & Controls" type="button">Toggles &amp; Controls</button>
+          <button class="filter-pill" data-tcat="Navigation" type="button">Navigation</button>
+          <button class="filter-pill" data-tcat="Cards & Checkouts" type="button">Cards &amp; Checkouts</button>
+          <button class="filter-pill" data-tcat="Landing Pages & 3D Heroes" type="button">Landing Pages &amp; 3D Heroes</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="registry-table" id="masterRegistryTable">
+          <thead>
+            <tr>
+              <th>Preview</th>
+              <th>Library ID</th>
+              <th>Category</th>
+              <th>Design Name &amp; Source Handle</th>
+              <th>Animation &amp; Visual Mechanics</th>
+              <th>Best Fit / Recommended Use-Case</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="masterRegistryBody">
+            <!-- Populated dynamically from catalog.json + live replica mapping -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 1: TACTILE & LIQUID GLASS BUTTONS -->
+    <section class="vault-section" data-category="buttons">
+      <div class="section-head">
+        <h2>01. Tactile, Plush &amp; Liquid Glass Buttons</h2>
+        <span>Click any button on stage to trigger its physics &amp; state transition</span>
+      </div>
+
+      <div class="component-grid">
+        <!-- BTN-01 -->
+        <article class="comp-card" id="BTN-01">
+          <div class="comp-top">
+            <span class="comp-id">BTN-01</span>
+            <a class="comp-ref" href="https://www.instagram.com/p/DeUgMKfIq04/" target="_blank" rel="noopener">IG: DeUgMKfIq04</a>
+          </div>
+          <div class="comp-stage stage-liquid-glass">
+            <div class="lg-stack">
+              <button class="lg-btn is-active" type="button">
+                <span class="lg-icon">🌙</span>
+                <span class="lg-meta"><strong>Sleep</strong><small>Warm Amber Glow</small></span>
+              </button>
+              <button class="lg-btn" type="button">
+                <span class="lg-icon">🔕</span>
+                <span class="lg-meta"><strong>Do Not Disturb</strong><small>Frosted Glass</small></span>
+              </button>
+              <button class="lg-btn" type="button">
+                <span class="lg-icon">👤</span>
+                <span class="lg-meta"><strong>Personal</strong><small>Refractive Rim</small></span>
+              </button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Liquid Glass Isometric Pill Buttons</h3>
+              <p>3D refractive glass stack with specular highlights &amp; amber active illumination.</p>
+            </div>
+            <button class="copy-btn" data-copy="BTN-01: Liquid Glass Isometric Pill Buttons">Use BTN-01</button>
+          </div>
+        </article>
+
+        <!-- BTN-02 -->
+        <article class="comp-card" id="BTN-02">
+          <div class="comp-top">
+            <span class="comp-id">BTN-02</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DezQ3Q5vIVy/" target="_blank" rel="noopener">IG: DezQ3Q5vIVy</a>
+          </div>
+          <div class="comp-stage stage-jelly">
+            <button class="jelly-btn" id="jellyBtnLive" type="button">
+              <span class="jelly-bubble" style="width:14px;height:14px;left:18px;bottom:12px;"></span>
+              <span class="jelly-bubble" style="width:9px;height:9px;right:24px;top:16px;animation-delay:0.8s;"></span>
+              <span class="jelly-bubble" style="width:11px;height:11px;right:48px;bottom:10px;animation-delay:1.4s;"></span>
+              Jelly Inside
+            </button>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Jelly Capsule Button ("Jelly Inside")</h3>
+              <p>Elastic squash-and-stretch spring physics + random hue shift on every tap.</p>
+            </div>
+            <button class="copy-btn" data-copy="BTN-02: Jelly Capsule Button">Use BTN-02</button>
+          </div>
+        </article>
+
+        <!-- BTN-03 -->
+        <article class="comp-card" id="BTN-03">
+          <div class="comp-top">
+            <span class="comp-id">BTN-03</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Dewzoj7Pc7O/" target="_blank" rel="noopener">IG: Dewzoj7Pc7O</a>
+          </div>
+          <div class="comp-stage stage-fluffy">
+            <button class="fluffy-btn" type="button">
+              <span>Contact</span>
+              <span>▶</span>
+            </button>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Fluffy Tactile Plush Button</h3>
+              <p>SVG fractal-noise fur border + warm neon rim glow + plush pillow compression.</p>
+            </div>
+            <button class="copy-btn" data-copy="BTN-03: Fluffy Tactile Plush Button">Use BTN-03</button>
+          </div>
+        </article>
+
+        <!-- BTN-04 -->
+        <article class="comp-card" id="BTN-04">
+          <div class="comp-top">
+            <span class="comp-id">BTN-04</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeteNo2Pw0M/" target="_blank" rel="noopener">IG: DeteNo2Pw0M</a>
+          </div>
+          <div class="comp-stage stage-fabric">
+            <button class="fabric-btn" type="button">
+              <span>🧵</span>
+              <span>Explore Collection</span>
+            </button>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Fabric Stitched Denim Button</h3>
+              <p>Cross-weave textile grain with gold stitched seam (ideal for Handloom/Karkhana).</p>
+            </div>
+            <button class="copy-btn" data-copy="BTN-04: Fabric Stitched Denim Button">Use BTN-04</button>
+          </div>
+        </article>
+
+        <!-- BTN-05 -->
+        <article class="comp-card" id="BTN-05">
+          <div class="comp-top">
+            <span class="comp-id">BTN-05</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DdrFmGlICwY/" target="_blank" rel="noopener">IG: DdrFmGlICwY</a>
+          </div>
+          <div class="comp-stage" id="cannonStage">
+            <button class="cannon-btn" id="cannonBtn" type="button">
+              <span id="cannonIcon">👕</span>
+              <span id="cannonLabel">Order Now</span>
+            </button>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Shirt Fold &amp; Confetti Cannon Button</h3>
+              <p>Tap Order: shirt folds into cannon and launches a 24-particle confetti burst.</p>
+            </div>
+            <button class="copy-btn" data-copy="BTN-05: Shirt Fold & Confetti Cannon Button">Use BTN-05</button>
+          </div>
+        </article>
+
+        <!-- BTN-06 -->
+        <article class="comp-card" id="BTN-06">
+          <div class="comp-top">
+            <span class="comp-id">BTN-06</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DdhNr-yoRFY/" target="_blank" rel="noopener">IG: DdhNr-yoRFY</a>
+          </div>
+          <div class="comp-stage">
+            <button class="flight-btn" id="flightBtn" type="button">
+              <span class="flight-plane">✈️</span>
+              <span id="flightText">Book Flight (JFK → LHR)</span>
+            </button>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Flight Booking Runway Takeoff Button</h3>
+              <p>Aircraft accelerates across cloud runway on click and confirms boarding.</p>
+            </div>
+            <button class="copy-btn" data-copy="BTN-06: Flight Booking Takeoff Button">Use BTN-06</button>
+          </div>
+        </article>
+
+        <!-- BTN-07 -->
+        <article class="comp-card" id="BTN-07">
+          <div class="comp-top">
+            <span class="comp-id">BTN-07</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Ddl3PRuoudK/" target="_blank" rel="noopener">IG: Ddl3PRuoudK</a>
+          </div>
+          <div class="comp-stage">
+            <div class="cat-pair">
+              <div class="cat-btn-wrap">
+                <span class="cat-peek">🐱</span>
+                <button class="cat-btn" type="button">Cat Rise</button>
+              </div>
+              <div class="cat-btn-wrap">
+                <span class="cat-peek">🐾</span>
+                <button class="cat-btn" type="button">Cat Claw</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Playful Cat Peek &amp; Paw Hover Buttons</h3>
+              <p>Hover or tap to make the cat peek over the button edge or swipe its paw.</p>
+            </div>
+            <button class="copy-btn" data-copy="BTN-07: Cat Peek & Paw Hover Buttons">Use BTN-07</button>
+          </div>
+        </article>
+
+        <!-- BTN-08 -->
+        <article class="comp-card" id="BTN-08">
+          <div class="comp-top">
+            <span class="comp-id">BTN-08</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeZutRCoPCd/" target="_blank" rel="noopener">IG: DeZutRCoPCd</a>
+          </div>
+          <div class="comp-stage stage-grass">
+            <div class="grass-box">
+              <button class="copy-btn" id="touchGrassBtn" style="background:#0f172a;color:#4ade80;border-color:#4ade80;" type="button">🍀 Touch Grass Break</button>
+              <div class="grass-blades" id="grassBlades"></div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Interactive "Touch Grass" Meadow Button</h3>
+              <p>Move cursor or tap across the blades of grass to bend them with spring physics.</p>
+            </div>
+            <button class="copy-btn" data-copy="BTN-08: Touch Grass Interactive Button">Use BTN-08</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3D TOGGLES, SLIDERS, DROPDOWNS & NAVIGATION -->
+    <section class="vault-section" data-category="controls">
+      <div class="section-head">
+        <h2>02. 3D Toggles, Sliders, Paper-Roll Dropdowns &amp; Gooey Nav</h2>
+        <span>Skeuomorphic switches, tear-away menus, and dynamic theme docks</span>
+      </div>
+
+      <div class="component-grid">
+        <!-- CTL-01 -->
+        <article class="comp-card" id="CTL-01">
+          <div class="comp-top">
+            <span class="comp-id">CTL-01</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/De11s9jvFSb/" target="_blank" rel="noopener">IG: De11s9jvFSb</a>
+          </div>
+          <div class="comp-stage">
+            <button class="sky-toggle" id="skyToggle" data-mode="light" type="button" aria-label="Toggle Light or Dark">
+              <div class="sky-toggle-labels">
+                <span>LIGHT</span>
+                <span>DARK</span>
+              </div>
+              <div class="sky-knob" id="skyKnob">☀️</div>
+            </button>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Skeuomorphic 3D Light/Dark Toggle</h3>
+              <p>Beveled metallic track with glowing neon ring knob (also toggles page theme).</p>
+            </div>
+            <button class="copy-btn" data-copy="CTL-01: Skeuomorphic 3D Light/Dark Toggle">Use CTL-01</button>
+          </div>
+        </article>
+
+        <!-- CTL-02 -->
+        <article class="comp-card" id="CTL-02">
+          <div class="comp-top">
+            <span class="comp-id">CTL-02</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DdjbLI5ofGq/" target="_blank" rel="noopener">IG: DdjbLI5ofGq</a>
+          </div>
+          <div class="comp-stage">
+            <button class="cabin-window" id="cabinSwitch" type="button">
+              <span class="cabin-plane">🛩️</span>
+              <span class="cabin-status" id="cabinStatus">AIRPLANE OFF</span>
+            </button>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Tactile 3D Airplane Mode Cabin Switch</h3>
+              <p>Aircraft cabin window switch that launches the plane into night sky on toggle.</p>
+            </div>
+            <button class="copy-btn" data-copy="CTL-02: Tactile 3D Airplane Mode Switch">Use CTL-02</button>
+          </div>
+        </article>
+
+        <!-- CTL-03 -->
+        <article class="comp-card" id="CTL-03">
+          <div class="comp-top">
+            <span class="comp-id">CTL-03</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeevvT0v1KU/" target="_blank" rel="noopener">IG: DeevvT0v1KU</a>
+          </div>
+          <div class="comp-stage">
+            <div class="jelly-slider-wrap">
+              <div style="display:flex;justify-content:space-between;margin-bottom:10px;font-weight:800;">
+                <span>Jelly Intensity</span>
+                <span id="jellyVal">48%</span>
+              </div>
+              <input type="range" min="0" max="100" value="48" class="jelly-range" id="jellyRange" aria-label="Jelly Slider" />
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>3D Liquid Jelly Range Slider</h3>
+              <p>Refractive mercury droplet thumb stretches elastically when dragged.</p>
+            </div>
+            <button class="copy-btn" data-copy="CTL-03: 3D Liquid Jelly Slider">Use CTL-03</button>
+          </div>
+        </article>
+
+        <!-- CTL-04 -->
+        <article class="comp-card" id="CTL-04">
+          <div class="comp-top">
+            <span class="comp-id">CTL-04</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DehVoUHPjbP/" target="_blank" rel="noopener">IG: DehVoUHPjbP</a>
+          </div>
+          <div class="comp-stage">
+            <div class="paper-roll-box open" id="paperDropdown">
+              <button class="paper-dowel" id="paperDowelBtn" type="button">
+                <span id="paperSelectedText">🧻 Select Your Plan</span>
+                <span>▾</span>
+              </button>
+              <div class="paper-sheet-list">
+                <button class="paper-tier" data-plan="Basic ($9/mo)" type="button"><span>Basic</span><span>$9/mo</span></button>
+                <button class="paper-tier" data-plan="Pro ($19/mo)" type="button"><span>Pro</span><span>$19/mo</span></button>
+                <button class="paper-tier" data-plan="Business ($49/mo)" type="button"><span>Business</span><span>$49/mo</span></button>
+                <button class="paper-tier" data-plan="Enterprise ($99/mo)" type="button"><span>Enterprise</span><span>$99/mo</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Paper-Roll Tear-Away Pricing Dropdown</h3>
+              <p>Unrolls pricing tiers from a dowel and tears off the selected receipt on click.</p>
+            </div>
+            <button class="copy-btn" data-copy="CTL-04: Paper-Roll Tear-Away Dropdown">Use CTL-04</button>
+          </div>
+        </article>
+
+        <!-- CTL-05 -->
+        <article class="comp-card" id="CTL-05">
+          <div class="comp-top">
+            <span class="comp-id">CTL-05</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DdwM0Zcov79/" target="_blank" rel="noopener">IG: DdwM0Zcov79</a>
+          </div>
+          <div class="comp-stage">
+            <div class="gooey-nav-wrap">
+              <div class="gooey-bar" id="gooeyBar">
+                <button class="gooey-tab active" type="button">🏠</button>
+                <button class="gooey-tab" type="button">💚</button>
+                <button class="gooey-tab" type="button">🔒</button>
+                <button class="gooey-tab" type="button">⚙️</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Gooey Liquid Lime Navigation Bar</h3>
+              <p>True SVG metaball filter where active black pill detaches with liquid viscosity.</p>
+            </div>
+            <button class="copy-btn" data-copy="CTL-05: Gooey Liquid Lime Nav Bar">Use CTL-05</button>
+          </div>
+        </article>
+
+        <!-- CTL-06 -->
+        <article class="comp-card" id="CTL-06">
+          <div class="comp-top">
+            <span class="comp-id">CTL-06</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Ddb8C3nOl3M/" target="_blank" rel="noopener">IG: Ddb8C3nOl3M</a>
+          </div>
+          <div class="comp-stage">
+            <div class="theme-dock-wrap">
+              <div class="theme-selector-row">
+                <button class="theme-chip" data-set-dock="laser" type="button">Laser</button>
+                <button class="theme-chip" data-set-dock="ink" type="button">Ink</button>
+                <button class="theme-chip" data-set-dock="thunder" type="button">Thunder</button>
+                <button class="theme-chip" data-set-dock="solar" type="button">Solar</button>
+                <button class="theme-chip" data-set-dock="acid" type="button">Acid</button>
+              </div>
+              <div class="theme-dock" id="themeDock" data-theme-mode="laser">
+                <button class="dock-item active" type="button">Home</button>
+                <button class="dock-item" type="button">Search</button>
+                <button class="dock-item" type="button">Explore</button>
+                <button class="dock-item" type="button">Profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>5 Dynamic Navigation Themes (Laser/Ink/Thunder/Solar/Acid)</h3>
+              <p>Switch between 5 neon dock glow signatures and interactive tab states.</p>
+            </div>
+            <button class="copy-btn" data-copy="CTL-06: 5 Dynamic Navigation Themes Dock">Use CTL-06</button>
+          </div>
+        </article>
+
+        <!-- CTL-07 -->
+        <article class="comp-card" id="CTL-07">
+          <div class="comp-top">
+            <span class="comp-id">CTL-07</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Dd__ssyowWg/" target="_blank" rel="noopener">IG: Dd__ssyowWg</a>
+          </div>
+          <div class="comp-stage">
+            <div class="liquid-menu-box open" id="liquidMenuBox">
+              <button class="liquid-ham-btn" id="liquidHamBtn" type="button" aria-label="Toggle Liquid Menu">💧</button>
+              <div class="liquid-drop-tray">
+                <button class="tray-pill" type="button">Work</button>
+                <button class="tray-pill" type="button">Labs</button>
+                <button class="tray-pill" type="button">Book</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Made of Liquid Expand Hamburger Menu</h3>
+              <p>Water-droplet glass launcher that expands into a floating spatial tray.</p>
+            </div>
+            <button class="copy-btn" data-copy="CTL-07: Liquid Expand Hamburger Menu">Use CTL-07</button>
+          </div>
+        </article>
+
+        <!-- CTL-08 -->
+        <article class="comp-card" id="CTL-08">
+          <div class="comp-top">
+            <span class="comp-id">CTL-08</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Ddeb1QzItSs/" target="_blank" rel="noopener">IG: Ddeb1QzItSs</a>
+          </div>
+          <div class="comp-stage">
+            <svg class="infinity-svg" viewBox="0 0 200 100">
+              <path class="infinity-track" d="M55,50 C20,15 20,85 55,50 C90,15 110,85 145,50 C180,15 180,85 145,50 C110,15 90,85 55,50 Z" />
+              <path class="infinity-ball" d="M55,50 C20,15 20,85 55,50 C90,15 110,85 145,50 C180,15 180,85 145,50 C110,15 90,85 55,50 Z" />
+            </svg>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Luminous Infinity Loop Loader</h3>
+              <p>Zero-dependency SVG figure-8 continuous glowing neon loader.</p>
+            </div>
+            <button class="copy-btn" data-copy="CTL-08: Luminous Infinity Loop Loader">Use CTL-08</button>
+          </div>
+        </article>
+
+        <!-- NAV-08 -->
+        <article class="comp-card" id="NAV-08">
+          <div class="comp-top">
+            <span class="comp-id">NAV-08</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Ddy_-CUoRRk/" target="_blank" rel="noopener">IG: Ddy_-CUoRRk</a>
+          </div>
+          <div class="comp-stage">
+            <div class="glossy-nav-pill" id="glossyNavPill">
+              <button class="glossy-tab active" type="button">🏠 Home</button>
+              <button class="glossy-tab" type="button">✨ Studio</button>
+              <button class="glossy-tab" type="button">📦 Vault</button>
+              <button class="glossy-tab" type="button">⚡ Contact</button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Liquid Glossy Black Pill Tab Navigation</h3>
+              <p>Sliding frosted glass active pill inside a deep obsidian dock.</p>
+            </div>
+            <button class="copy-btn" data-copy="NAV-08: Liquid Glossy Black Pill Tab Navigation">Use NAV-08</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE CARDS, CHECKOUTS & MICRO-WORKFLOWS -->
+    <section class="vault-section" data-category="cards">
+      <div class="section-head">
+        <h2>03. Interactive Cards, Glass Checkouts &amp; Micro-Workflows</h2>
+        <span>Click ripples, POS card readers, tear-off event passes, and playful verifications</span>
+      </div>
+
+      <div class="component-grid">
+        <!-- CRD-01 -->
+        <article class="comp-card" id="CRD-01">
+          <div class="comp-top">
+            <span class="comp-id">CRD-01</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/De16QLgPl9c/" target="_blank" rel="noopener">IG: De16QLgPl9c</a>
+          </div>
+          <div class="comp-stage">
+            <div class="ripple-glass-card" id="rippleGlassCard">
+              <strong style="font-size:1.1rem;">LIQUID GLASS UI</strong>
+              <span style="font-size:0.8rem;opacity:0.8;margin-top:4px;">Move cursor &amp; click for water ripples</span>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Liquid Glass Card with Click Ripples &amp; Sparks</h3>
+              <p>Cursor-tracked rim spotlight + expanding concentric water ripples on click.</p>
+            </div>
+            <button class="copy-btn" data-copy="CRD-01: Liquid Glass Card with Click Ripples">Use CRD-01</button>
+          </div>
+        </article>
+
+        <!-- CRD-02 -->
+        <article class="comp-card" id="CRD-02">
+          <div class="comp-top">
+            <span class="comp-id">CRD-02</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeM5iZKv8AV/" target="_blank" rel="noopener">IG: DeM5iZKv8AV</a>
+          </div>
+          <div class="comp-stage">
+            <div class="pos-checkout-wrap" id="posWrap">
+              <div class="glass-visa" id="glassVisa">
+                <div style="display:flex;justify-content:space-between;font-weight:800;"><span>RED BANANA PAY</span><span>VISA</span></div>
+                <div style="font-family:monospace;letter-spacing:0.12em;">4412 •••• •••• 8890</div>
+              </div>
+              <button class="pos-slot" id="posBtn" type="button">💳 Tap to Dip Card ($199.00)</button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Glassy 3D Credit Card &amp; POS Terminal</h3>
+              <p>Refractive glass Visa card slides into POS terminal slot and confirms checkout.</p>
+            </div>
+            <button class="copy-btn" data-copy="CRD-02: Glassy 3D Credit Card Checkout">Use CRD-02</button>
+          </div>
+        </article>
+
+        <!-- CRD-03 -->
+        <article class="comp-card" id="CRD-03">
+          <div class="comp-top">
+            <span class="comp-id">CRD-03</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Dd6mc4VOBRw/" target="_blank" rel="noopener">IG: Dd6mc4VOBRw</a>
+          </div>
+          <div class="comp-stage">
+            <div class="ticket-pass" id="ticketPass" role="button" tabindex="0">
+              <div class="ticket-main">
+                <div style="font-size:0.72rem;opacity:0.8;">LIVE EXHIBITION PASS</div>
+                <div style="font-size:1.05rem;font-weight:800;margin:4px 0;">Red Banana Spatial Lab</div>
+                <div style="font-size:0.75rem;">24 Oct • VIP Row A</div>
+              </div>
+              <div class="ticket-stub">
+                <span>TEAR</span>
+                <span style="font-size:1.2rem;">✂️</span>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Perforated Tear-Ticket Event Pass</h3>
+              <p>Click the ticket to tear off the perforated VIP stub with spring rotation.</p>
+            </div>
+            <button class="copy-btn" data-copy="CRD-03: Perforated Tear-Ticket Event Pass">Use CRD-03</button>
+          </div>
+        </article>
+
+        <!-- CRD-04 -->
+        <article class="comp-card" id="CRD-04">
+          <div class="comp-top">
+            <span class="comp-id">CRD-04</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeKagGKPptD/" target="_blank" rel="noopener">IG: DeKagGKPptD</a>
+          </div>
+          <div class="comp-stage">
+            <div class="hoop-stage" id="hoopStage">
+              <button class="file-ball-btn" id="shootFileBtn" type="button">🏀 Shoot .JPG</button>
+              <div class="hoop-rim" id="hoopStatus">NET</div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Basketball Hoop File Upload Animation</h3>
+              <p>Crumples uploaded file into a basketball and arcs it cleanly through the net.</p>
+            </div>
+            <button class="copy-btn" data-copy="CRD-04: Basketball Hoop File Upload">Use CRD-04</button>
+          </div>
+        </article>
+
+        <!-- CRD-05 -->
+        <article class="comp-card" id="CRD-05">
+          <div class="comp-top">
+            <span class="comp-id">CRD-05</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeKIQcgoYyu/" target="_blank" rel="noopener">IG: DeKIQcgoYyu</a>
+          </div>
+          <div class="comp-stage">
+            <div class="revolver-wrap">
+              <div class="cylinder-wheel" id="cylinderWheel" title="Click to Spin Chamber">
+                <div class="chamber-dot"></div>
+              </div>
+              <div>
+                <div style="font-family:monospace;font-size:1.1rem;font-weight:800;margin-bottom:8px;" id="otpCodeDisplay">OTP: 7 3 • •</div>
+                <button class="copy-btn" id="spinOtpBtn" type="button">🔫 Chamber Next Digit</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Rotary Cylinder OTP Verification UI</h3>
+              <p>Each digit rotates the brass 6-chamber wheel 60 degrees and locks on verify.</p>
+            </div>
+            <button class="copy-btn" data-copy="CRD-05: Rotary Cylinder OTP Verification">Use CRD-05</button>
+          </div>
+        </article>
+
+        <!-- CRD-06 -->
+        <article class="comp-card" id="CRD-06">
+          <div class="comp-top">
+            <span class="comp-id">CRD-06</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeWuGhxIZEw/" target="_blank" rel="noopener">IG: DeWuGhxIZEw</a>
+          </div>
+          <div class="comp-stage">
+            <div class="turnstile-box" id="turnstileBox">
+              <button class="boarding-card" id="swipePassBtn" type="button">🛫 DEL → BOM • Swipe Pass</button>
+              <div class="scanner-led" id="scannerLed">● READY TO SCAN</div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Boarding Pass Turnstile Optical Scanner</h3>
+              <p>Swipe boarding pass through optical slot to flip status LED to ACCESS GRANTED.</p>
+            </div>
+            <button class="copy-btn" data-copy="CRD-06: Boarding Pass Turnstile Scanner">Use CRD-06</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FULL LANDING PAGES, 3D HERO STAGES & PORTFOLIOS -->
+    <section class="vault-section" data-category="landings">
+      <div class="section-head">
+        <h2>04. Full Landing Page Heroes, 3D Portfolios &amp; Spatial UI Stages</h2>
+        <span>Complete hero layouts and interactive portfolio concepts ready for client deployments</span>
+      </div>
+
+      <div class="landing-grid">
+        <!-- LND-01 -->
+        <article class="comp-card" id="LND-01">
+          <div class="comp-top">
+            <span class="comp-id">LND-01</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Deo9IIJvcD7/" target="_blank" rel="noopener">IG: Deo9IIJvcD7</a>
+          </div>
+          <div class="comp-stage">
+            <div class="lnd-glass-hero">
+              <div class="lnd-crystal"></div>
+              <div class="lnd-glass-slab">
+                <div style="font-size:0.7rem;font-weight:800;color:#4f46e5;">NEXT LEVEL UI</div>
+                <h4 style="font-size:1.35rem;font-weight:800;margin:4px 0;">Build Faster with Liquid Glass.</h4>
+                <p style="font-size:0.78rem;color:#334155;">Refractive frosted prism cards with floating 3D iridescent geometry.</p>
+              </div>
+              <div style="display:flex;gap:8px;margin-top:12px;">
+                <span style="padding:6px 12px;border-radius:999px;background:rgba(255,255,255,0.7);font-size:0.75rem;font-weight:800;">🔮 Prism Shader</span>
+                <span style="padding:6px 12px;border-radius:999px;background:rgba(255,255,255,0.7);font-size:0.75rem;font-weight:800;">✨ Specular Rim</span>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Liquid Glass Hero Landing Page ("Build Faster")</h3>
+              <p>Iridescent daylight glass hero with floating 3D prism geometry.</p>
+            </div>
+            <button class="copy-btn" data-copy="LND-01: Liquid Glass Hero Landing Page">Use LND-01</button>
+          </div>
+        </article>
+
+        <!-- LND-02 -->
+        <article class="comp-card" id="LND-02">
+          <div class="comp-top">
+            <span class="comp-id">LND-02</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DejwKo6vNpv/" target="_blank" rel="noopener">IG: DejwKo6vNpv</a>
+          </div>
+          <div class="comp-stage">
+            <div class="suitcase-stage">
+              <div class="suitcase-body" id="suitcaseBody">
+                <button class="suitcase-sticker" data-case="3D WebGL Heritage Sites & Museums" type="button">WORK</button>
+                <button class="suitcase-sticker" style="background:#2563eb;" data-case="Interactive Product Configurators" type="button">3D LAB</button>
+                <button class="suitcase-sticker" style="background:#16a34a;" data-case="Award-Winning Brand Films & Motion" type="button">FILMS</button>
+              </div>
+              <div class="suitcase-card-drawer" id="suitcaseDrawer">
+                <strong style="color:#ff9d2e;display:block;margin-bottom:4px;">🧳 Unpacked Sticker:</strong>
+                <span id="suitcaseText">Tap any sticker on the ribbed 3D suitcase to unpack case studies.</span>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>3D Ribbed Suitcase Interactive Portfolio ("WORK")</h3>
+              <p>Draggable/tiltable polycarbonate suitcase where tapping travel stickers unpacks projects.</p>
+            </div>
+            <button class="copy-btn" data-copy="LND-02: 3D Suitcase Interactive Portfolio">Use LND-02</button>
+          </div>
+        </article>
+
+        <!-- LND-03 -->
+        <article class="comp-card" id="LND-03">
+          <div class="comp-top">
+            <span class="comp-id">LND-03</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeloTo9PGDl/" target="_blank" rel="noopener">IG: DeloTo9PGDl</a>
+          </div>
+          <div class="comp-stage">
+            <div class="sketch-stage" id="sketchStage">
+              <div style="font-weight:900;font-size:1.15rem;">✏️ THIS PORTFOLIO IS HAND DRAWN!</div>
+              <p style="font-size:0.8rem;margin-top:4px;" id="sketchStatus">Crumpled notebook paper world with sketched archway door.</p>
+              <button class="sketch-door-btn" id="sketchDoorBtn" type="button">🚪 Open Sketched Door</button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Hand-Drawn Pencil Sketch Crumpled Paper Portfolio</h3>
+              <p>Sketched architecture on paper grain with comic-ink borders and door transition.</p>
+            </div>
+            <button class="copy-btn" data-copy="LND-03: Hand-Drawn Pencil Sketch Portfolio">Use LND-03</button>
+          </div>
+        </article>
+
+        <!-- LND-04 -->
+        <article class="comp-card" id="LND-04">
+          <div class="comp-top">
+            <span class="comp-id">LND-04</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DecH7RMIL2D/" target="_blank" rel="noopener">IG: DecH7RMIL2D</a>
+          </div>
+          <div class="comp-stage">
+            <div class="water-canvas-wrap" id="waterHeroWrap">
+              <div style="text-align:center;z-index:2;pointer-events:none;">
+                <div style="font-size:2rem;font-weight:800;letter-spacing:-0.03em;">Hover Water Effect</div>
+                <div style="font-size:0.78rem;color:#38d6ff;">Move cursor across stage to spawn liquid waves</div>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Interactive Hover Water Ripple Hero Stage</h3>
+              <p>Fluid wave rings trail the cursor across editorial hero typography.</p>
+            </div>
+            <button class="copy-btn" data-copy="LND-04: Hover Water Ripple Hero Stage">Use LND-04</button>
+          </div>
+        </article>
+
+        <!-- LND-05 -->
+        <article class="comp-card" id="LND-05">
+          <div class="comp-top">
+            <span class="comp-id">LND-05</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Ddoi6RWIy5Q/" target="_blank" rel="noopener">IG: Ddoi6RWIy5Q</a>
+          </div>
+          <div class="comp-stage">
+            <div class="glass-calc">
+              <div class="calc-screen" id="calcScreen">1,428.50</div>
+              <div class="calc-keys">
+                <button class="calc-key" data-k="7" type="button">7</button>
+                <button class="calc-key" data-k="8" type="button">8</button>
+                <button class="calc-key" data-k="9" type="button">9</button>
+                <button class="calc-key" data-k="+" type="button">+</button>
+                <button class="calc-key" data-k="4" type="button">4</button>
+                <button class="calc-key" data-k="5" type="button">5</button>
+                <button class="calc-key" data-k="6" type="button">6</button>
+                <button class="calc-key" data-k="=" type="button">=</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>3D Liquid Glass Gold-Circuit Calculator &amp; Planner UI</h3>
+              <p>Transparent glass chassis with glowing gold traces and live working keys.</p>
+            </div>
+            <button class="copy-btn" data-copy="LND-05: 3D Liquid Glass Calculator & Planner UI">Use LND-05</button>
+          </div>
+        </article>
+
+        <!-- LND-06 -->
+        <article class="comp-card" id="LND-06">
+          <div class="comp-top">
+            <span class="comp-id">LND-06</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Deelcglvpy8/" target="_blank" rel="noopener">IG: Deelcglvpy8</a>
+          </div>
+          <div class="comp-stage">
+            <div class="retro-deck playing" id="retroDeck">
+              <div class="cd-disc"><div class="cd-hole"></div></div>
+              <div>
+                <div style="font-weight:800;font-size:0.95rem;">3D Retro CD &amp; Cassette Deck</div>
+                <div style="font-size:0.75rem;color:#9aa5be;margin:4px 0;">Brushed metal hardware + spinning iridescent disc</div>
+                <button class="copy-btn" id="toggleCdBtn" type="button">⏯️ Toggle Spin</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>3D Retro CD/Cassette Player &amp; Paper Crumple Stage</h3>
+              <p>Tactile brushed-aluminum media deck with spinning iridescent optical disc.</p>
+            </div>
+            <button class="copy-btn" data-copy="LND-06: 3D Retro CD & Cassette Player Stage">Use LND-06</button>
+          </div>
+        </article>
+
+        <!-- LND-07 -->
+        <article class="comp-card" id="LND-07">
+          <div class="comp-top">
+            <span class="comp-id">LND-07</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Derh5_BvuGA/" target="_blank" rel="noopener">IG: Derh5_BvuGA</a>
+          </div>
+          <div class="comp-stage">
+            <div class="roadster-stage" id="roadsterStage">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="font-weight:800;font-size:0.95rem;">TESLA ROADSTER 3D FLIP</span>
+                <span style="font-size:0.74rem;color:#38d6ff;" id="roadsterTelemetry">0-60 mph: 1.9s</span>
+              </div>
+              <div style="margin:16px 0;">
+                <span class="roadster-car" id="roadsterCar">🏎️</span>
+              </div>
+              <button class="copy-btn" id="launchRoadsterBtn" style="align-self:flex-start;" type="button">🚀 Launch Curved-Wall Flip</button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>3D Tesla Roadster Curved-Wall Flip Launch UI</h3>
+              <p>Cinematic burnout, curved wall climb, and mid-air 360 flip into product specs.</p>
+            </div>
+            <button class="copy-btn" data-copy="LND-07: 3D Tesla Roadster Flip Launch UI">Use LND-07</button>
+          </div>
+        </article>
+
+        <!-- LND-08 -->
+        <article class="comp-card" id="LND-08">
+          <div class="comp-top">
+            <span class="comp-id">LND-08</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Ded4KjRvBUa/" target="_blank" rel="noopener">IG: Ded4KjRvBUa</a>
+          </div>
+          <div class="comp-stage">
+            <div class="crumple-paper-card" id="crumpleCard">
+              <span>📄 CLICK TO CRUMPLE</span>
+              <small style="opacity:0.75;margin-top:4px;">3D Creased Paper Ball</small>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Interactive 3D Paper Crumple Effect</h3>
+              <p>Click to crumple any flat card or boring old website screenshot into a 3D paper ball.</p>
+            </div>
+            <button class="copy-btn" data-copy="LND-08: Interactive 3D Paper Crumple Effect">Use LND-08</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 5: OPTICAL SHADERS, CONTEMPORARY FONTS, LUXURY PALETTES & 3D SIGNATURES -->
+    <section class="vault-section" data-category="signatures">
+      <div class="section-head">
+        <h2>05. Optical Shaders, Contemporary Fonts, Luxury Palettes &amp; 3D Studio Lab (12)</h2>
+        <span>Scraped from @aniakubow (iOS 26 Glass), @kalypsodesigns (72pt Fonts), @uxui_shrut (AAA Triads), Componentry, VengeanceUI &amp; Skiper UI</span>
+      </div>
+
+      <div class="component-grid">
+        <!-- RB-01: iOS 26 Optical SVG Refraction Lens -->
+        <article class="comp-card" id="RB-01">
+          <div class="comp-top">
+            <span class="comp-id">RB-01</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DcwFH02NF3i/" target="_blank" rel="noopener">IG: DcwFH02NF3i (@aniakubow)</a>
+          </div>
+          <div class="comp-stage optical-stage" id="opticalStage">
+            <div class="optical-bg-text">REAL OPTICAL<br/>GLASS BENDS<br/>LIGHT BEHIND</div>
+            <div class="optical-lens" id="opticalLens">🔍 Move Cursor to Refract</div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>iOS 26 Optical SVG Displacement Liquid Glass</h3>
+              <p>True feTurbulence + feDisplacementMap optical lens that bends background geometry.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-01: iOS 26 Optical SVG Displacement Liquid Glass">Use RB-01</button>
+          </div>
+        </article>
+
+        <!-- RB-02: Contemporary Open-Source Font Pairing Lab (72pt.app) -->
+        <article class="comp-card" id="RB-02">
+          <div class="comp-top">
+            <span class="comp-id">RB-02</span>
+            <a class="comp-ref" href="https://www.instagram.com/p/DegmV3PEvur/" target="_blank" rel="noopener">IG: DegmV3PEvur (@kalypsodesigns)</a>
+          </div>
+          <div class="comp-stage">
+            <div class="font-lab-box">
+              <div class="font-preview-text" id="fontPreviewText" style="font-family:'MuseoModerno', sans-serif;">Red Banana Spatial Studio</div>
+              <div class="font-chip-row" id="fontChipRow">
+                <button class="font-chip active" data-font="'MuseoModerno', sans-serif" type="button">MuseoModerno</button>
+                <button class="font-chip" data-font="'Parkinsans', sans-serif" type="button">Parkinsans</button>
+                <button class="font-chip" data-font="'Tomorrow', sans-serif" type="button">Tomorrow</button>
+                <button class="font-chip" data-font="'Tektur', sans-serif" type="button">Tektur</button>
+                <button class="font-chip" data-font="'Syne', sans-serif" type="button">Syne</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>72pt Contemporary Display Font Switcher</h3>
+              <p>Test 5 open-source commercial display fonts live (MuseoModerno, Parkinsans, Tomorrow, Tektur, Syne).</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-02: 72pt Contemporary Display Font Switcher">Use RB-02</button>
+          </div>
+        </article>
+
+        <!-- RB-03: WCAG-AAA Luxury Color Triad Switcher -->
+        <article class="comp-card" id="RB-03">
+          <div class="comp-top">
+            <span class="comp-id">RB-03</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeBsFKNo67_/" target="_blank" rel="noopener">IG: DeBsFKNo67_ (@uxui_shrut)</a>
+          </div>
+          <div class="comp-stage">
+            <div class="triad-card" id="triadCard">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <strong id="triadName">Earthy Bronze &amp; Burnt Amber</strong>
+                <span style="font-size:0.72rem;font-family:monospace;" id="triadRatio">7.59:1 AAA</span>
+              </div>
+              <p style="font-size:0.78rem;opacity:0.9;">Click any luxury triad below to transform surface, border, and accent tokens:</p>
+              <div class="triad-swatches">
+                <button class="triad-btn" style="background:#6C5636;" data-bg="#090907" data-mid="#6C5636" data-fg="#B99B73" data-name="Charcoal + Burnt Amber" data-ratio="7.59:1 AAA" type="button">Amber Bronze</button>
+                <button class="triad-btn" style="background:#009E9B;" data-bg="#031211" data-mid="#009E9B" data-fg="#E8E4D3" data-name="Ink Black + Electric Teal" data-ratio="14.99:1 AAA" type="button">Electric Teal</button>
+                <button class="triad-btn" style="background:#DE1110;" data-bg="#021861" data-mid="#255DCE" data-fg="#FFFFFF" data-name="Royal Cobalt + Crimson" data-ratio="12.40:1 AAA" type="button">Royal Cobalt</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>WCAG-AAA Luxury Color Triad Engine</h3>
+              <p>3 non-generic editorial color triads verified against stock-palette &amp; contrast gates.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-03: WCAG-AAA Luxury Color Triad Engine">Use RB-03</button>
+          </div>
+        </article>
+
+        <!-- RB-04: Componentry Cursor-Repel Particle Typography -->
+        <article class="comp-card" id="RB-04">
+          <div class="comp-top">
+            <span class="comp-id">RB-04</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeUWlbmjJ99/" target="_blank" rel="noopener">IG: DeUWlbmjJ99 (Componentry)</a>
+          </div>
+          <div class="comp-stage" style="padding:12px;">
+            <canvas id="particleTextCanvas" width="330" height="170" style="width:100%;height:170px;border-radius:14px;background:#070a12;cursor:crosshair;"></canvas>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Cursor-Repel Particle Typography Canvas</h3>
+              <p>Move cursor across the canvas to scatter glowing particles with elastic return physics.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-04: Cursor-Repel Particle Typography Canvas">Use RB-04</button>
+          </div>
+        </article>
+
+        <!-- RB-05: VengeanceUI Magnetic Pull & Conic Laser Border Button -->
+        <article class="comp-card" id="RB-05">
+          <div class="comp-top">
+            <span class="comp-id">RB-05</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DaDRFEezrOP/" target="_blank" rel="noopener">IG: DaDRFEezrOP (VengeanceUI)</a>
+          </div>
+          <div class="comp-stage" id="magStage">
+            <button class="mag-laser-btn" id="magLaserBtn" type="button">✨ Magnetic Conic Laser CTA</button>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Magnetic Pull + Conic Laser Border Button</h3>
+              <p>Physically pulls toward cursor trajectory while orbiting a 360-degree neon laser rim.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-05: Magnetic Pull + Conic Laser Border Button">Use RB-05</button>
+          </div>
+        </article>
+
+        <!-- RB-06: Skiper 3D Depth Stack Card Deck -->
+        <article class="comp-card" id="RB-06">
+          <div class="comp-top">
+            <span class="comp-id">RB-06</span>
+            <a class="comp-ref" href="https://www.instagram.com/p/Dd6VnMClIzz/" target="_blank" rel="noopener">IG: Dd6VnMClIzz (Skiper UI)</a>
+          </div>
+          <div class="comp-stage">
+            <div class="stack-deck" id="stackDeck" title="Click to cycle 3D card stack">
+              <div class="stack-card" data-depth="0">
+                <span style="font-size:0.72rem;color:#38d6ff;font-weight:800;">01 / SPATIAL WEBGL</span>
+                <strong>3D Heritage &amp; Luxury Sites</strong>
+                <small style="color:var(--text-muted);">Click deck to cycle cards →</small>
+              </div>
+              <div class="stack-card" data-depth="1">
+                <span style="font-size:0.72rem;color:#ff9d2e;font-weight:800;">02 / LIQUID GLASS</span>
+                <strong>Refractive Product Stages</strong>
+                <small style="color:var(--text-muted);">Click deck to cycle cards →</small>
+              </div>
+              <div class="stack-card" data-depth="2">
+                <span style="font-size:0.72rem;color:#a8ff35;font-weight:800;">03 / HYPERFRAMES</span>
+                <strong>Programmatic 60FPS Reels</strong>
+                <small style="color:var(--text-muted);">Click deck to cycle cards →</small>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Skiper 3D Perspective Depth Card Stack</h3>
+              <p>Click the stack to cycle 3D layered cards with spring Z-depth and scale physics.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-06: Skiper 3D Perspective Depth Card Stack">Use RB-06</button>
+          </div>
+        </article>
+
+        <!-- RB-07: Motion Primitives Kinetic Flipping Word Swap -->
+        <article class="comp-card" id="RB-07">
+          <div class="comp-top">
+            <span class="comp-id">RB-07</span>
+            <a class="comp-ref" href="https://www.instagram.com/p/Dd6VnMClIzz/" target="_blank" rel="noopener">IG: Dd6VnMClIzz (Motion Primitives)</a>
+          </div>
+          <div class="comp-stage">
+            <div style="text-align:center;">
+              <div style="font-size:0.82rem;color:var(--text-muted);margin-bottom:6px;">WE ENGINEER</div>
+              <div id="kineticWordBox" style="font-size:1.75rem;font-weight:900;color:var(--accent-amber);transition:all 0.32s cubic-bezier(0.34,1.56,0.64,1);">3D Spatial Websites</div>
+              <button class="copy-btn" id="cycleWordBtn" style="margin-top:14px;" type="button">🔄 Flip Next Headline</button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Kinetic 3D Flipping Word Swap Hero</h3>
+              <p>Auto-cycling and click-triggered 3D vertical word morph for hero headlines.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-07: Kinetic 3D Flipping Word Swap Hero">Use RB-07</button>
+          </div>
+        </article>
+
+        <!-- RB-08: Before / After 3D Website Teardown Curtain Slider -->
+        <article class="comp-card" id="RB-08">
+          <div class="comp-top">
+            <span class="comp-id">RB-08</span>
+            <span class="comp-ref">RB Signature (Teardown Engine)</span>
+          </div>
+          <div class="comp-stage">
+            <div class="teardown-compare" id="teardownCompare" style="--split:50%;">
+              <div class="td-layer td-after">
+                <span style="font-size:0.72rem;color:#a8ff35;font-weight:800;">AFTER: RED BANANA 3D WEBGL</span>
+                <strong style="font-size:1.15rem;margin:4px 0;">60 FPS Spatial Luxury Stage</strong>
+              </div>
+              <div class="td-layer td-before">
+                <span style="font-size:0.72rem;font-weight:800;">BEFORE: OLD FLAT 2D SITE</span>
+                <strong style="font-size:1.15rem;margin:4px 0;">Static Boxed Template</strong>
+              </div>
+              <div class="td-handle"></div>
+            </div>
+            <input type="range" min="5" max="95" value="50" id="teardownRange" style="width:90%;margin-top:10px;cursor:ew-resize;" aria-label="Before After Slider" />
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Before vs After 3D Website Teardown Slider</h3>
+              <p>Interactive split-curtain comparison slider for B2B client pitch pages &amp; Reels.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-08: Before vs After 3D Website Teardown Slider">Use RB-08</button>
+          </div>
+        </article>
+
+        <!-- RB-09: 3D Sculpture Centimetre Scale Comparator -->
+        <article class="comp-card" id="RB-09">
+          <div class="comp-top">
+            <span class="comp-id">RB-09</span>
+            <span class="comp-ref">RB Signature (3D Scale Stage)</span>
+          </div>
+          <div class="comp-stage">
+            <div class="scale-stage-wrap">
+              <div class="scale-pedestal-row">
+                <div class="scale-figure" style="height:120px;">
+                  <div style="font-size:2.4rem;line-height:1;">🧍</div>
+                  <small style="font-size:0.68rem;color:var(--text-muted);">Human (170cm)</small>
+                </div>
+                <div class="scale-figure" id="sculptureScaleFig" style="height:56px;">
+                  <div style="width:42px;height:100%;border-radius:10px 10px 4px 4px;background:linear-gradient(135deg,#d97706,#78350f);border:1.5px solid #fcd34d;display:grid;place-items:center;font-weight:800;font-size:0.72rem;" id="sculptureCmLabel">48cm</div>
+                </div>
+              </div>
+              <div class="font-chip-row">
+                <button class="font-chip" data-cm="33" data-h="40px" type="button">33 cm</button>
+                <button class="font-chip active" data-cm="48" data-h="58px" type="button">48 cm</button>
+                <button class="font-chip" data-cm="68" data-h="82px" type="button">68 cm</button>
+                <button class="font-chip" data-cm="125" data-h="108px" type="button">125 cm</button>
+              </div>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Interactive 3D Sculpture Height &amp; Scale Comparator</h3>
+              <p>Real-centimetre side-by-side scale comparison against a 170cm human reference.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-09: Interactive 3D Sculpture Scale Comparator">Use RB-09</button>
+          </div>
+        </article>
+
+        <!-- RB-10: 3D Liquid Glass Weekly Schedule & macOS Dock -->
+        <article class="comp-card" id="RB-10">
+          <div class="comp-top">
+            <span class="comp-id">RB-10</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeWHVFWoav-/" target="_blank" rel="noopener">IG: DeWHVFWoav- (@code_x_sg)</a>
+          </div>
+          <div class="comp-stage">
+            <div style="text-align:center;margin-bottom:10px;font-size:0.8rem;font-weight:700;" id="macDockLabel">Hover or tap dock icons for magnification physics</div>
+            <div class="macos-dock">
+              <button class="mac-icon" data-app="📅 Mon: 3D WebGL Sprint" type="button">📅</button>
+              <button class="mac-icon" data-app="🎨 Tue: Liquid Glass Shaders" type="button">🎨</button>
+              <button class="mac-icon" data-app="🎬 Wed: Hyperframes Reel" type="button">🎬</button>
+              <button class="mac-icon" data-app="🚀 Thu: Cloudflare Deploy" type="button">🚀</button>
+              <button class="mac-icon" data-app="💎 Fri: Client Handover" type="button">💎</button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>3D Liquid Glass Schedule &amp; macOS Magnification Dock</h3>
+              <p>Floating translucent spatial planner with smooth proximity-magnifying dock icons.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-10: 3D Liquid Glass Schedule & macOS Dock">Use RB-10</button>
+          </div>
+        </article>
+
+        <!-- RB-11: 3D Refractive Glass Panel Login Portal -->
+        <article class="comp-card" id="RB-11">
+          <div class="comp-top">
+            <span class="comp-id">RB-11</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/DeJVZxeobS0/" target="_blank" rel="noopener">IG: DeJVZxeobS0 (@code_x_sg)</a>
+          </div>
+          <div class="comp-stage" style="background:linear-gradient(135deg,#1e1b4b,#311042,#0f172a);">
+            <div id="glassLoginSlab" style="width:230px;padding:16px;border-radius:18px;background:rgba(255,255,255,0.14);border:1.5px solid rgba(255,255,255,0.55);backdrop-filter:blur(14px);box-shadow:0 16px 32px rgba(0,0,0,0.5);transition:transform 0.2s ease;">
+              <div style="font-weight:800;font-size:0.88rem;margin-bottom:8px;text-align:center;">🔮 Glass Client Portal</div>
+              <input type="text" value="founder@redbanana.in" readonly style="width:100%;padding:7px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.35);background:rgba(0,0,0,0.25);color:#fff;font-size:0.75rem;margin-bottom:8px;" />
+              <button class="copy-btn" id="glassLoginBtn" style="width:100%;min-height:38px;background:rgba(56,214,255,0.28);" type="button">Sign In →</button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>3D Refractive Glass Slab Login UI</h3>
+              <p>3D tiltable frosted glass authentication slab with specular edge highlights.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-11: 3D Refractive Glass Slab Login UI">Use RB-11</button>
+          </div>
+        </article>
+
+        <!-- RB-12: Navigation Tabs V5 & Multi-Style Switcher -->
+        <article class="comp-card" id="RB-12">
+          <div class="comp-top">
+            <span class="comp-id">RB-12</span>
+            <a class="comp-ref" href="https://www.instagram.com/reel/Ddjz9CPocMn/" target="_blank" rel="noopener">IG: Ddjz9CPocMn (@code_x_sg)</a>
+          </div>
+          <div class="comp-stage">
+            <div style="display:flex;gap:8px;background:#090b10;padding:8px 12px;border-radius:14px;border:1px solid var(--border-glass);" id="navV5Bar">
+              <button class="font-chip active" type="button" style="border-bottom:3px solid #38d6ff;">⚡ Overview</button>
+              <button class="font-chip" type="button">📐 3D Specs</button>
+              <button class="font-chip" type="button">🎞️ Motion</button>
+            </div>
+          </div>
+          <div class="comp-footer">
+            <div class="comp-info">
+              <h3>Navigation Tabs V5 with Glowing Laser Underline</h3>
+              <p>Clean dark-mode tab bar with sliding neon bottom beam and icon bounce.</p>
+            </div>
+            <button class="copy-btn" data-copy="RB-12: Navigation Tabs V5 with Laser Underline">Use RB-12</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 6: COMPLETE 52-ITEM SCRAPED & CURATED REFERENCE CATALOG -->
+    <section class="vault-section" data-category="archive">
+      <div class="section-head">
+        <h2>06. Full 52-Item Visual Reference Catalog (@code_x_sg + Shared IG Reels)</h2>
+        <span>Every scraped design with local reference preview, live stage jump, code inspector &amp; shortlist button</span>
+      </div>
+      <div class="archive-grid" id="archiveGrid"></div>
+    </section>
+  </main>
+
+  <!-- Live Source Code & Fullscreen Stage Inspector Modal -->
+  <div class="inspector-modal" id="inspectorModal">
+    <div class="inspector-dialog">
+      <div class="inspector-head">
+        <div>
+          <strong id="inspectorTitle" style="font-size:1.1rem;">Component Inspector</strong>
+          <div id="inspectorSub" style="font-size:0.78rem;color:var(--text-muted);">Live Stage &amp; Copy-Paste HTML/CSS Snippet</div>
+        </div>
+        <div style="display:flex;gap:8px;">
+          <button class="copy-btn" id="copyInspectorCodeBtn" type="button">📋 Copy HTML Snippet</button>
+          <button class="copy-btn" id="closeInspectorBtn" style="background:transparent;" type="button">✕ Close</button>
+        </div>
+      </div>
+      <div class="inspector-body">
+        <div id="inspectorLiveStage" class="comp-stage" style="min-height:260px;border-radius:18px;border:1px solid var(--border-glass);"></div>
+        <div>
+          <div style="font-size:0.78rem;font-weight:800;color:var(--text-muted);margin-bottom:6px;">EXTRACTED COMPONENT HTML STRUCTURE:</div>
+          <pre class="inspector-pre" id="inspectorCodePre"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Client Shortlist Bar -->
+  <div class="shortlist-bar" id="shortlistBar">
+    <span style="font-size:0.84rem;font-weight:700;">Client Shortlist:</span>
+    <span class="shortlist-count" id="shortlistCount">0</span>
+    <button class="copy-btn" id="exportShortlistBtn" style="min-height:38px;padding:0 14px;" type="button">Copy Client Brief 📋</button>
+    <button class="copy-btn" id="clearShortlistBtn" style="min-height:38px;padding:0 10px;background:transparent;" type="button" title="Clear Shortlist">✕</button>
+  </div>
+
+  <div class="copy-toast" id="copyToast">Copied Component ID to Clipboard!</div>
+
+  <script src="rb-stamp.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
