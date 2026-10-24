@@ -446,6 +446,62 @@ const EMBEDDED_CATALOG = [
     "href": "https://explore.ownprimland.com/",
     "title": "Primland Explore (2026 Webby + People's Voice Winner, Travel): Aerial Map & AI Concierge Handoff",
     "thumb_file": "64_WBY_PRIMLAND.jpg"
+  },
+  {
+    "index": 65,
+    "shortcode": "AWW_LUSION",
+    "href": "https://lusion.co/",
+    "title": "Lusion (Awwwards Agency of the Year): 3D Depth-Map Spotlight & Specular Tilt Card",
+    "thumb_file": "65_AWW_LUSION.jpg"
+  },
+  {
+    "index": 66,
+    "shortcode": "AWW_LOCOMOTIVE",
+    "href": "https://locomotive.ca/",
+    "title": "Locomotive (Awwwards SOTY): Scroll-Velocity Skew Kinetic Marquee (±14deg)",
+    "thumb_file": "66_AWW_LOCOMOTIVE.jpg"
+  },
+  {
+    "index": 67,
+    "shortcode": "AWW_RESN",
+    "href": "https://resn.co.nz/",
+    "title": "Resn (Awwwards SOTD): 16-Bar Audio-Reactive Harmonic Spectrum & Synth Pad",
+    "thumb_file": "67_AWW_RESN.jpg"
+  },
+  {
+    "index": 68,
+    "shortcode": "AWW_BASEMENT",
+    "href": "https://basement.studio/",
+    "title": "Basement Studio (Awwwards SOTD): Proximity-Illuminated 3x3 Bento Matrix",
+    "thumb_file": "68_AWW_BASEMENT.jpg"
+  },
+  {
+    "index": 69,
+    "shortcode": "AWW_DOGSTUDIO",
+    "href": "https://dogstudio.co/",
+    "title": "Dogstudio (Awwwards SOTD): Expanding Circular Iris Portal Reveal (clip-path)",
+    "thumb_file": "69_AWW_DOGSTUDIO.jpg"
+  },
+  {
+    "index": 70,
+    "shortcode": "AWW_VERCEL3D",
+    "href": "https://vercel.com/design",
+    "title": "Vercel Design Engineering: 3D Isometric Exploded-View Layer Stack Debugger",
+    "thumb_file": "70_AWW_VERCEL3D.jpg"
+  },
+  {
+    "index": 71,
+    "shortcode": "AWW_PRICING",
+    "href": "https://redbananatechsolutions.in/",
+    "title": "Red Banana Deal Closer: Multi-Currency (INR / USD / EUR) Project Scope & ROI Estimator",
+    "thumb_file": "71_AWW_PRICING.jpg"
+  },
+  {
+    "index": 72,
+    "shortcode": "AWW_OBYS",
+    "href": "https://obys.agency/",
+    "title": "Obys Agency (Awwwards SOTD): 12-Column Swiss Editorial Grid & Baseline Overlay",
+    "thumb_file": "72_AWW_OBYS.jpg"
   }
 ];
 
@@ -513,7 +569,15 @@ const REPLICA_MAP = {
   "WBY_TRACE": { id: "WBY-09", anchor: "WBY-09", cat: "Webby Winners", mech: "Live status pill badge (Critical / Advancing / Resolved) + percentage verdict facet filter", fit: "Research Portals, Red Banana Labs Benchmarks & Public Data Hubs (Webby 2026 Winner)" },
   "WBY_RADIOALICE": { id: "WBY-10", anchor: "WBY-10", cat: "Webby Winners", mech: "Timestamped archival broadcast transcript cues + 1-tap Quick Exit privacy safety bar", fit: "Documentary Storytelling, Oral History Archives & Sensitive Portals (Webby 2026 Winner)" },
   "WBY_LLL": { id: "WBY-11", anchor: "WBY-11", cat: "Webby Winners", mech: "Interactive situational dialogue quiz prompt that awards a shareable Rank S / Master Xplorer card", fit: "EdTech Platforms, Cultre Heritage Quizzes & Interactive Onboarding (Webby 2026 Winner)" },
-  "WBY_PRIMLAND": { id: "WBY-12", anchor: "WBY-12", cat: "Webby Winners", mech: "Interactive aerial resort elevation pins + 1-click 'Send Trip Plan to AI Concierge' handoff", fit: "Luxury Heritage Hotels, Eco-Resorts & Outbound Hospitality Pitches (Webby + PV Winner)" }
+  "WBY_PRIMLAND": { id: "WBY-12", anchor: "WBY-12", cat: "Webby Winners", mech: "Interactive aerial resort elevation pins + 1-click 'Send Trip Plan to AI Concierge' handoff", fit: "Luxury Heritage Hotels, Eco-Resorts & Outbound Hospitality Pitches (Webby + PV Winner)" },
+  "AWW_LUSION": { id: "AWW-01", anchor: "AWW-01", cat: "Awwwards SOTD", mech: "Pointer-tracked 3D depth-map spotlight + perspective tilt + Z-layer parallax", fit: "Flagship Agency Heroes, Luxury Product Reveals (Lusion Style)" },
+  "AWW_LOCOMOTIVE": { id: "AWW-02", anchor: "AWW-02", cat: "Awwwards SOTD", mech: "Infinite kinetic ticker that shears dynamically (±14deg) with scroll/drag velocity", fit: "Editorial Section Dividers, High-Energy Case Studies (Locomotive Style)" },
+  "AWW_RESN": { id: "AWW-03", anchor: "AWW-03", cat: "Awwwards SOTD", mech: "16-band audio-reactive harmonic visualizer with pointer scrub & synth presets", fit: "Music/Cultural Portals, Interactive Sound Stages (Resn Style)" },
+  "AWW_BASEMENT": { id: "AWW-04", anchor: "AWW-04", cat: "Awwwards SOTD", mech: "3x3 bento matrix with shared proximity cursor illumination & 1px specular borders", fit: "Developer Platforms, AI Tooling Grids, Red Banana Labs (Basement Style)" },
+  "AWW_DOGSTUDIO": { id: "AWW-05", anchor: "AWW-05", cat: "Awwwards SOTD", mech: "Hardware-accelerated clip-path: circle() iris portal expanding from click coordinates", fit: "Showreel Modals, Before/After Scene Transitions (Dogstudio Style)" },
+  "AWW_VERCEL3D": { id: "AWW-06", anchor: "AWW-06", cat: "Awwwards SOTD", mech: "Interactive preserve-3d isometric exploded-view stack of DOM, Shader & HUD layers", fit: "Architecture Diagrams, Technical Deep-Dives, SaaS Heroes (Vercel Style)" },
+  "AWW_PRICING": { id: "AWW-07", anchor: "AWW-07", cat: "Awwwards SOTD", mech: "Live multi-currency (INR ₹ / USD $ / EUR €) scope & page-count ROI estimator", fit: "Agency Proposal Pages, B2B Outbound Deal Closers" },
+  "AWW_OBYS": { id: "AWW-08", anchor: "AWW-08", cat: "Awwwards SOTD", mech: "Exposed 12-column Swiss architectural grid & 8px baseline rhythm toggle overlay", fit: "Design Systems, Editorial Portfolios & Architecture Studios (Obys Style)" }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -533,11 +597,39 @@ document.addEventListener("DOMContentLoaded", () => {
     window.__toastTimer = setTimeout(() => toast.classList.remove("show"), 2400);
   }
 
+  function extractShortlistIds() {
+    const ids = [];
+    shortlist.forEach((entry) => {
+      const m = String(entry).match(/^([A-Z0-9-]+)/);
+      if (m && !ids.includes(m[1])) ids.push(m[1]);
+    });
+    return ids;
+  }
+
+  function highlightPickedCards() {
+    const pickedIds = new Set(extractShortlistIds());
+    document.querySelectorAll(".comp-card[id]").forEach((card) => {
+      card.classList.toggle("picked-card", pickedIds.has(card.id));
+    });
+  }
+
   function updateShortlistUI() {
     if (shortlistCountEl) shortlistCountEl.textContent = String(shortlist.size);
     try {
       localStorage.setItem("rb_vault_shortlist", JSON.stringify(Array.from(shortlist)));
     } catch (_) {}
+    highlightPickedCards();
+  }
+
+  // Hydrate shortlist from ?pick=ID1,ID2 URL parameter if present
+  const params = new URLSearchParams(window.location.search);
+  const pickParam = params.get("pick");
+  if (pickParam) {
+    pickParam.split(",").map((s) => s.trim().toUpperCase()).filter(Boolean).forEach((id) => {
+      const card = document.getElementById(id);
+      const h3 = card ? card.querySelector("h3") : null;
+      shortlist.add(h3 ? `${id}: ${h3.textContent}` : id);
+    });
   }
   updateShortlistUI();
 
@@ -549,7 +641,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleLockBtn = document.getElementById("toggleClientLockBtn");
   const gateErr = document.getElementById("gateErrorMsg");
 
-  const params = new URLSearchParams(window.location.search);
   if (params.get("gate") === "locked" && sessionStorage.getItem("rb_vault_unlocked") !== "1") {
     if (gateOverlay) gateOverlay.classList.add("locked");
   }
@@ -690,23 +781,59 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const exportShortlistBtn = document.getElementById("exportShortlistBtn");
+  const shareShortlistUrlBtn = document.getElementById("shareShortlistUrlBtn");
+  const waShortlistBtn = document.getElementById("waShortlistBtn");
   const clearShortlistBtn = document.getElementById("clearShortlistBtn");
+
+  function buildShareableShortlistUrl() {
+    const ids = extractShortlistIds();
+    const base = window.location.origin + window.location.pathname;
+    return ids.length ? `${base}?pick=${encodeURIComponent(ids.join(","))}` : base;
+  }
+
   if (exportShortlistBtn) {
     exportShortlistBtn.addEventListener("click", () => {
       const arr = Array.from(shortlist);
+      const url = buildShareableShortlistUrl();
       const brief = arr.length
-        ? "Red Banana Selected UI Components:\n- " + arr.join("\n- ")
+        ? `Red Banana Selected UI Components (${arr.length}):\n- ` + arr.join("\n- ") + `\n\nInteractive Preview Link:\n${url}`
         : "No components selected yet. Click 'Use ID' on any component card or table row!";
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(brief).catch(() => {});
       }
-      showToast(arr.length ? `Copied ${arr.length} Shortlisted Components!` : "Click 'Use ID' on any card first!");
+      showToast(arr.length ? `Copied ${arr.length} Shortlisted Components + Link!` : "Click 'Use ID' on any card first!");
+    });
+  }
+  if (shareShortlistUrlBtn) {
+    shareShortlistUrlBtn.addEventListener("click", () => {
+      const ids = extractShortlistIds();
+      const url = buildShareableShortlistUrl();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).catch(() => {});
+      }
+      if (ids.length && window.history && window.history.replaceState) {
+        window.history.replaceState(null, "", `?pick=${ids.join(",")}`);
+      }
+      showToast(ids.length ? `Copied Shareable Client Link (${ids.length} picks)!` : "Copied Vault Link (Pick cards to include IDs)!");
+    });
+  }
+  if (waShortlistBtn) {
+    waShortlistBtn.addEventListener("click", () => {
+      const arr = Array.from(shortlist);
+      const url = buildShareableShortlistUrl();
+      const text = arr.length
+        ? `Hi Vivek / Red Banana Studio, here is our selected UI & Motion shortlist (${arr.length} items):\n- ${arr.join("\n- ")}\n\nLive Link: ${url}`
+        : `Hi Vivek / Red Banana Studio, exploring the Red Banana UI & Motion Vault: ${url}`;
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank", "noopener");
     });
   }
   if (clearShortlistBtn) {
     clearShortlistBtn.addEventListener("click", () => {
       shortlist.clear();
       updateShortlistUI();
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, "", window.location.pathname);
+      }
       showToast("Shortlist cleared.");
     });
   }
@@ -1373,6 +1500,16 @@ document.addEventListener("DOMContentLoaded", () => {
     return matched.slice(0, 18).join("\n");
   }
 
+  function extractMatchingJs(cardId, stageEl) {
+    const ids = [];
+    if (stageEl) {
+      if (stageEl.id) ids.push(stageEl.id);
+      stageEl.querySelectorAll("[id]").forEach((el) => ids.push(el.id));
+    }
+    const idQueries = ids.slice(0, 4).map((id) => `  const ${id} = document.getElementById("${id}");`).join("\n");
+    return `document.addEventListener("DOMContentLoaded", () => {\n  // Interactive controller for ${cardId}\n${idQueries || `  const stage = document.querySelector("#${cardId} .comp-stage");`}\n  document.querySelectorAll("#${cardId} button, #${cardId} .font-chip").forEach((btn) => {\n    btn.addEventListener("click", () => btn.classList.toggle("active"));\n  });\n});`;
+  }
+
   function closeInspector() {
     if (activeMovedStage && inspectorLiveStage) {
       while (inspectorLiveStage.firstChild) {
@@ -1400,7 +1537,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const rawHtml = stage ? stage.innerHTML.trim() : card.innerHTML.trim();
     const cssRules = extractMatchingCss(stage);
     const cssBlock = cssRules ? `\n\n<style>\n${cssRules}\n</style>` : "";
-    const snippet = `<!-- Red Banana UI Vault Component: ${cardId} -->\n<div class="comp-stage">\n  ${rawHtml}\n</div>${cssBlock}`;
+    const jsBlock = `\n\n<script>\n${extractMatchingJs(cardId, stage)}\n</script>`;
+    const snippet = `<!-- Red Banana UI Vault Component: ${cardId} -->\n<div class="comp-stage" id="${cardId}">\n  ${rawHtml}\n</div>${cssBlock}${jsBlock}`;
     if (inspectorCodePre) {
       inspectorCodePre.textContent = snippet;
     }
@@ -1690,7 +1828,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const wbyDichCoords = document.getElementById("wbyDichCoords");
   const wbyDichHotspotLabel = document.getElementById("wbyDichHotspotLabel");
   if (wbyDichStage && wbyDichCoords) {
-    wbyDichStage.addEventListener("mousemove", (e) => {
+    wbyDichStage.addEventListener("pointermove", (e) => {
       const rect = wbyDichStage.getBoundingClientRect();
       const x = String(Math.max(0, Math.round(e.clientX - rect.left))).padStart(4, "0");
       const y = String(Math.max(0, Math.round(e.clientY - rect.top))).padStart(4, "0");
@@ -1984,4 +2122,194 @@ document.addEventListener("DOMContentLoaded", () => {
       if (rb11bCmdOut) rb11bCmdOut.textContent = chip.getAttribute("data-cmd") || "";
     });
   });
+
+  // =========================================================================
+  // SECTION 7: AWWWARDS SOTD & GSAP SPATIAL SIGNATURES (AWW-01 TO AWW-08)
+  // =========================================================================
+
+  // AWW-01: Lusion 3D Depth-Map Spotlight & Specular Tilt Card
+  const awwLusionStage = document.getElementById("awwLusionStage");
+  const awwLusionReadout = document.getElementById("awwLusionReadout");
+  const awwLusionPulseBtn = document.getElementById("awwLusionPulseBtn");
+  const awwLusionTitle = document.getElementById("awwLusionTitle");
+  if (awwLusionStage) {
+    awwLusionStage.addEventListener("pointermove", (e) => {
+      const rect = awwLusionStage.getBoundingClientRect();
+      const px = Math.max(0, Math.min(100, Math.round(((e.clientX - rect.left) / (rect.width || 1)) * 100)));
+      const py = Math.max(0, Math.min(100, Math.round(((e.clientY - rect.top) / (rect.height || 1)) * 100)));
+      const rx = (((50 - py) / 50) * 10).toFixed(1);
+      const ry = (((px - 50) / 50) * 12).toFixed(1);
+      awwLusionStage.style.setProperty("--lx", `${px}%`);
+      awwLusionStage.style.setProperty("--ly", `${py}%`);
+      awwLusionStage.style.transform = `perspective(500px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      if (awwLusionReadout) {
+        awwLusionReadout.textContent = `TILT: ${rx}° X / ${ry}° Y • LIGHT: ${px}% ${py}%`;
+      }
+    });
+    awwLusionStage.addEventListener("pointerleave", () => {
+      awwLusionStage.style.transform = "perspective(500px) rotateX(0deg) rotateY(0deg)";
+    });
+  }
+  if (awwLusionPulseBtn && awwLusionStage) {
+    let pulseCount = 0;
+    const pulseTitles = ["SPATIAL WEBGL STUDIO", "DEPTH-MAP SHADER V2", "SPECULAR RIM ACTIVE", "LUSION 60FPS CORE"];
+    awwLusionPulseBtn.addEventListener("click", () => {
+      pulseCount = (pulseCount + 1) % pulseTitles.length;
+      awwLusionStage.style.setProperty("--lx", `${25 + pulseCount * 20}%`);
+      awwLusionStage.style.setProperty("--ly", `${30 + pulseCount * 15}%`);
+      if (awwLusionTitle) awwLusionTitle.textContent = pulseTitles[pulseCount];
+      if (awwLusionReadout) awwLusionReadout.textContent = `PULSE #0${pulseCount + 1} • SPECULAR DEPTH LOCKED`;
+    });
+  }
+
+  // AWW-02: Locomotive Scroll-Velocity Skew Kinetic Marquee
+  const awwMarqueeTrack = document.getElementById("awwMarqueeTrack");
+  const awwSkewRange = document.getElementById("awwSkewRange");
+  const awwSkewVal = document.getElementById("awwSkewVal");
+  const awwReverseMarqueeBtn = document.getElementById("awwReverseMarqueeBtn");
+  let marqueeReversed = false;
+  if (awwSkewRange && awwMarqueeTrack) {
+    awwSkewRange.addEventListener("input", () => {
+      const deg = Number(awwSkewRange.value) || 0;
+      awwMarqueeTrack.style.setProperty("--skew-deg", `${deg}deg`);
+      const vel = (1 + Math.abs(deg) / 10).toFixed(1);
+      if (awwSkewVal) awwSkewVal.textContent = `SKEW: ${deg}° • ${vel}x VELOCITY`;
+    });
+  }
+  if (awwReverseMarqueeBtn && awwMarqueeTrack) {
+    awwReverseMarqueeBtn.addEventListener("click", () => {
+      marqueeReversed = !marqueeReversed;
+      const deg = marqueeReversed ? 12 : -12;
+      awwMarqueeTrack.style.setProperty("--skew-deg", `${deg}deg`);
+      if (awwSkewRange) awwSkewRange.value = String(deg);
+      if (awwSkewVal) awwSkewVal.textContent = `SKEW: ${deg}° • ${marqueeReversed ? "REVERSE" : "FORWARD"}`;
+    });
+  }
+
+  // AWW-03: Resn 16-Bar Audio-Reactive Harmonic Spectrum
+  const awwEqGrid = document.getElementById("awwEqGrid");
+  if (awwEqGrid) {
+    const bars = [];
+    for (let i = 0; i < 16; i++) {
+      const b = document.createElement("div");
+      b.className = "aww-eq-bar";
+      const h = 25 + Math.round(Math.sin((i / 15) * Math.PI) * 65);
+      b.style.height = `${h}%`;
+      awwEqGrid.appendChild(b);
+      bars.push(b);
+    }
+    function applyEqPreset(mode) {
+      bars.forEach((bar, i) => {
+        let h = 30;
+        if (mode === "harmonic") h = 22 + Math.round(Math.sin((i / 15) * Math.PI) * 72);
+        else if (mode === "bass") h = Math.max(16, 96 - i * 5);
+        else if (mode === "vocal") h = 20 + ((i * 23) % 75);
+        bar.style.height = `${h}%`;
+      });
+    }
+    awwEqGrid.addEventListener("pointermove", (e) => {
+      const rect = awwEqGrid.getBoundingClientRect();
+      const rel = (e.clientX - rect.left) / (rect.width || 1);
+      const centerIdx = Math.floor(rel * 16);
+      bars.forEach((bar, i) => {
+        const dist = Math.abs(i - centerIdx);
+        const h = Math.max(18, 96 - dist * 14);
+        bar.style.height = `${h}%`;
+      });
+    });
+    document.querySelectorAll("#awwEqPresets .font-chip").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("#awwEqPresets .font-chip").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        applyEqPreset(btn.getAttribute("data-preset") || "harmonic");
+      });
+    });
+  }
+
+  // AWW-04: Basement Proximity-Illuminated 3x3 Bento Matrix
+  const awwBentoMatrix = document.getElementById("awwBentoMatrix");
+  const awwBentoStatus = document.getElementById("awwBentoStatus");
+  if (awwBentoMatrix) {
+    awwBentoMatrix.querySelectorAll(".aww-bento-cell").forEach((cell) => {
+      cell.addEventListener("click", () => {
+        awwBentoMatrix.querySelectorAll(".aww-bento-cell").forEach((c) => c.classList.remove("active"));
+        cell.classList.add("active");
+        if (awwBentoStatus) {
+          awwBentoStatus.textContent = "ACTIVE NODE: " + (cell.getAttribute("data-cell") || "3D WebGL").toUpperCase();
+        }
+      });
+    });
+  }
+
+  // AWW-05: Dogstudio Expanding Circular Iris Portal Reveal
+  const awwIrisStage = document.getElementById("awwIrisStage");
+  const awwIrisBtn = document.getElementById("awwIrisBtn");
+  if (awwIrisStage && awwIrisBtn) {
+    awwIrisStage.addEventListener("click", (e) => {
+      const rect = awwIrisStage.getBoundingClientRect();
+      const ix = Math.round(((e.clientX - rect.left) / (rect.width || 1)) * 100) || 50;
+      const iy = Math.round(((e.clientY - rect.top) / (rect.height || 1)) * 100) || 50;
+      awwIrisStage.style.setProperty("--ix", `${ix}%`);
+      awwIrisStage.style.setProperty("--iy", `${iy}%`);
+      awwIrisStage.classList.toggle("open");
+      awwIrisBtn.textContent = awwIrisStage.classList.contains("open")
+        ? "✕ Close Iris Portal"
+        : "⭕ Toggle Iris Portal";
+    });
+  }
+
+  // AWW-06: Vercel 3D Isometric Exploded-View Layer Stack
+  const awwIsoStack = document.getElementById("awwIsoStack");
+  const awwIsoToggleBtn = document.getElementById("awwIsoToggleBtn");
+  if (awwIsoStack && awwIsoToggleBtn) {
+    const toggleIso = () => {
+      awwIsoStack.classList.toggle("exploded");
+      awwIsoToggleBtn.textContent = awwIsoStack.classList.contains("exploded")
+        ? "🥞 Collapse Z-Layers"
+        : "🚀 Explode Z-Layers (3D)";
+    };
+    awwIsoToggleBtn.addEventListener("click", toggleIso);
+    awwIsoStack.addEventListener("click", toggleIso);
+  }
+
+  // AWW-07: Multi-Currency (INR / USD / EUR) Project Scope & ROI Estimator
+  const awwPagesRange = document.getElementById("awwPagesRange");
+  const awwQuoteOutput = document.getElementById("awwQuoteOutput");
+  let activeCurr = { code: "INR", rate: 1, sym: "₹" };
+  function updateAwwQuote() {
+    if (!awwPagesRange || !awwQuoteOutput) return;
+    const pages = Number(awwPagesRange.value) || 6;
+    const baseInr = pages * 35000;
+    const converted = Math.round(baseInr * activeCurr.rate);
+    const formatted = activeCurr.code === "INR"
+      ? converted.toLocaleString("en-IN")
+      : converted.toLocaleString("en-US");
+    awwQuoteOutput.textContent = `${pages} Pages • ${activeCurr.sym}${formatted}`;
+  }
+  document.querySelectorAll("#awwCurrencyRow .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#awwCurrencyRow .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeCurr = {
+        code: btn.getAttribute("data-curr") || "INR",
+        rate: Number(btn.getAttribute("data-rate")) || 1,
+        sym: btn.getAttribute("data-sym") || "₹"
+      };
+      updateAwwQuote();
+    });
+  });
+  if (awwPagesRange) {
+    awwPagesRange.addEventListener("input", updateAwwQuote);
+  }
+
+  // AWW-08: Obys 12-Column Swiss Editorial Grid & Baseline Overlay
+  const awwSwissStage = document.getElementById("awwSwissStage");
+  const awwGridToggleBtn = document.getElementById("awwGridToggleBtn");
+  if (awwSwissStage && awwGridToggleBtn) {
+    awwGridToggleBtn.addEventListener("click", () => {
+      awwSwissStage.classList.toggle("show-grid");
+      const on = awwSwissStage.classList.contains("show-grid");
+      awwGridToggleBtn.textContent = on ? "📏 Hide 12-Col Grid" : "📏 Show 12-Col Grid";
+    });
+  }
 });

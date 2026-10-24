@@ -2444,7 +2444,227 @@ html[data-theme="light"] .vault-header {
   }
 }
 
+/* SECTION 7: AWWWARDS SOTD & GSAP SPATIAL SIGNATURES (AWW-01 .. AWW-08) */
+.cat-badge[data-cat="Awwwards SOTD"] {
+  background: rgba(168, 255, 53, 0.14);
+  color: #a8ff35;
+  border-color: rgba(168, 255, 53, 0.45);
+}
 
+.comp-card.picked-card {
+  border-color: var(--accent-amber);
+  box-shadow: 0 0 28px rgba(255, 157, 46, 0.35);
+}
 
+/* AWW-01: Lusion 3D Depth-Map Spotlight & Specular Tilt */
+.aww-lusion-stage {
+  width: 100%;
+  border-radius: 16px;
+  padding: 16px;
+  background: radial-gradient(circle at var(--lx, 50%) var(--ly, 50%), rgba(192, 132, 252, 0.42), rgba(15, 23, 42, 0.95) 72%);
+  border: 1.5px solid rgba(192, 132, 252, 0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.2s ease;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
 
+/* AWW-02: Locomotive Scroll-Velocity Skew Kinetic Marquee */
+.aww-marquee-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #090d16;
+  border: 1px solid rgba(168, 255, 53, 0.35);
+  padding: 12px 10px;
+}
+
+.aww-marquee-track {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #f8fafc;
+  white-space: nowrap;
+  transform: skewX(var(--skew-deg, -8deg));
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-align: center;
+}
+
+/* AWW-03: Resn 16-Bar Audio-Reactive Harmonic Spectrum */
+.aww-eq-grid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  height: 82px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 14px;
+  background: rgba(9, 13, 22, 0.85);
+  border: 1px solid rgba(56, 214, 255, 0.3);
+  cursor: ew-resize;
+}
+
+.aww-eq-bar {
+  flex: 1;
+  max-width: 12px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f472b6, #38bdf8, #a8ff35);
+  transition: height 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* AWW-04: Basement Proximity-Illuminated 3x3 Bento Matrix */
+.aww-bento-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+.aww-bento-cell {
+  min-height: 48px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.14);
+  color: #f8fafc;
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.aww-bento-cell.active,
+.aww-bento-cell:hover {
+  border-color: #a8ff35;
+  background: rgba(168, 255, 53, 0.16);
+  color: #a8ff35;
+  box-shadow: 0 0 16px rgba(168, 255, 53, 0.35);
+}
+
+/* AWW-05: Dogstudio Expanding Circular Iris Portal Reveal */
+.aww-iris-stage {
+  position: relative;
+  width: 100%;
+  min-height: 136px;
+  border-radius: 16px;
+  padding: 16px;
+  background: #0b0f19;
+  border: 1.5px solid rgba(56, 214, 255, 0.35);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.aww-iris-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #4f46e5, #ec4899);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  clip-path: circle(0% at var(--ix, 50%) var(--iy, 50%));
+  transition: clip-path 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.aww-iris-stage.open .aww-iris-overlay {
+  clip-path: circle(145% at var(--ix, 50%) var(--iy, 50%));
+}
+
+/* AWW-06: Vercel 3D Isometric Exploded-View Layer Stack */
+.aww-iso-stack {
+  position: relative;
+  width: 220px;
+  height: 108px;
+  transform-style: preserve-3d;
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+.aww-iso-stack.exploded {
+  transform: perspective(520px) rotateX(46deg) rotateZ(-24deg);
+}
+
+.aww-iso-plane {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  font-family: monospace;
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+.aww-iso-plane.p1 {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1.5px solid #64748b;
+  color: #cbd5e1;
+}
+.aww-iso-plane.p2 {
+  background: rgba(49, 46, 129, 0.85);
+  border: 1.5px solid #818cf8;
+  color: #e0e7ff;
+}
+.aww-iso-plane.p3 {
+  background: rgba(6, 78, 59, 0.85);
+  border: 1.5px solid #34d399;
+  color: #ecfdf5;
+}
+
+.aww-iso-stack.exploded .aww-iso-plane.p1 { transform: translateZ(0px) translateY(22px); }
+.aww-iso-stack.exploded .aww-iso-plane.p2 { transform: translateZ(26px) translateY(0px); }
+.aww-iso-stack.exploded .aww-iso-plane.p3 { transform: translateZ(52px) translateY(-22px); }
+
+/* AWW-08: Obys 12-Column Swiss Editorial Grid & Baseline Overlay */
+.aww-swiss-stage {
+  position: relative;
+  width: 100%;
+  min-height: 132px;
+  border-radius: 16px;
+  padding: 16px;
+  background: #140d12;
+  border: 1.5px solid rgba(244, 63, 94, 0.4);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.aww-swiss-cols {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+  padding: 0 8px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.aww-swiss-stage.show-grid .aww-swiss-cols {
+  opacity: 1;
+}
+
+.aww-swiss-cols span {
+  background: rgba(244, 63, 94, 0.16);
+  border-left: 1px dashed rgba(244, 63, 94, 0.35);
+  border-right: 1px dashed rgba(244, 63, 94, 0.35);
+}
 
