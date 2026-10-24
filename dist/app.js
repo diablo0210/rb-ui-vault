@@ -362,6 +362,90 @@ const EMBEDDED_CATALOG = [
     "href": "https://redbanana-lab.pages.dev/ui-vault/#RB-09",
     "title": "Red Banana Signature: 3D Sculpture Centimetre Scale Comparator",
     "thumb_file": "52_RB_SCULPT3D.jpg"
+  },
+  {
+    "index": 53,
+    "shortcode": "WBY_IGLOO",
+    "href": "https://www.igloo.inc/",
+    "title": "Igloo Inc (2026 Webby Winner, Visual Design): Ice-Block & Chromatic Glitch Switcher",
+    "thumb_file": "53_WBY_IGLOO.jpg"
+  },
+  {
+    "index": 54,
+    "shortcode": "WBY_EXAT",
+    "href": "https://exat.hottype.co/",
+    "title": "Exat Typeface (2026 Webby Nominee, Visual Design): Variable Type Tester & Design Space",
+    "thumb_file": "54_WBY_EXAT.jpg"
+  },
+  {
+    "index": 55,
+    "shortcode": "WBY_AETHER",
+    "href": "https://spark.thedigitalpanda.com",
+    "title": "Aether 1 & The Spark (2026 Webby Winner, Motion): Hold-to-Start Sweep & Telemetry HUD",
+    "thumb_file": "55_WBY_AETHER.jpg"
+  },
+  {
+    "index": 56,
+    "shortcode": "WBY_DICH",
+    "href": "https://dich-fashion.webflow.io/",
+    "title": "DICH Fashion (2026 Webby Winner, Best UI): Live X/Y Pointer Readout & Garment Hotspots",
+    "thumb_file": "56_WBY_DICH.jpg"
+  },
+  {
+    "index": 57,
+    "shortcode": "WBY_WARHOL",
+    "href": "https://warhol-arts.webflow.io/",
+    "title": "Warhol Art (2026 Webby Winner, Art & Design): 1962 Silkscreen Plate & 3-Step Ticket Drawer",
+    "thumb_file": "57_WBY_WARHOL.jpg"
+  },
+  {
+    "index": 58,
+    "shortcode": "WBY_SAVOR",
+    "href": "https://savor.it/",
+    "title": "Savor & Seedlip (2026 Webby Winner, Food & Drink): Subtraction Manifesto & Un-Melting Butter",
+    "thumb_file": "58_WBY_SAVOR.jpg"
+  },
+  {
+    "index": 59,
+    "shortcode": "WBY_IMAGINARIUM",
+    "href": "https://www.slv.vic.gov.au/mouthful-of-dust/",
+    "title": "National Gallery Imaginarium & SLV (2026 Webby Winner, Cultural): Visitor Comfort & Chapter Bar",
+    "thumb_file": "59_WBY_IMAGINARIUM.jpg"
+  },
+  {
+    "index": 60,
+    "shortcode": "WBY_ROCKHALL",
+    "href": "https://www.rockhall.com/",
+    "title": "Rock & Roll Hall of Fame & Tracing Art (2026 Webby Nominee): 1669-2026 Provenance Timeline",
+    "thumb_file": "60_WBY_ROCKHALL.jpg"
+  },
+  {
+    "index": 61,
+    "shortcode": "WBY_TRACE",
+    "href": "https://www.thetrace.org/",
+    "title": "The Trace & CFR Tracker (2026 Webby Winner, News): Live Status Pill & Verdict Facet Filter",
+    "thumb_file": "61_WBY_TRACE.jpg"
+  },
+  {
+    "index": 62,
+    "shortcode": "WBY_RADIOALICE",
+    "href": "https://intrusionproject.com/",
+    "title": "Intrusion Project: Radio Alice & Plan C (2026 Webby Winner, Activism): Raid Transcript & Quick Exit",
+    "thumb_file": "62_WBY_RADIOALICE.jpg"
+  },
+  {
+    "index": 63,
+    "shortcode": "WBY_LLL",
+    "href": "https://labs.google/lll",
+    "title": "Little Language Lessons & Meister (2026 Webby Winner, Education): Scenario Quiz & Rank S Badge",
+    "thumb_file": "63_WBY_LLL.jpg"
+  },
+  {
+    "index": 64,
+    "shortcode": "WBY_PRIMLAND",
+    "href": "https://explore.ownprimland.com/",
+    "title": "Primland Explore (2026 Webby + People's Voice Winner, Travel): Aerial Map & AI Concierge Handoff",
+    "thumb_file": "64_WBY_PRIMLAND.jpg"
   }
 ];
 
@@ -417,7 +501,19 @@ const REPLICA_MAP = {
   "Ddx-cbVnEVA": { id: "RB-04B", anchor: "RB-04", cat: "Shaders & Typography", mech: "Interactive WebGL/Canvas particle & shader primitives from top GitHub repos", fit: "Red Banana Labs R&D Demonstrations" },
   "DdoV5mik0du": { id: "RB-07B", anchor: "RB-07", cat: "Shaders & Typography", mech: "Deterministic frame-accurate kinetic typography for automated Reel rendering", fit: "@redbananatech & @onemoreobject Automated Video Reels" },
   "RB_TEARDOWN": { id: "RB-08", anchor: "RB-08", cat: "Landing Pages & 3D Heroes", mech: "Interactive drag-curtain comparing Legacy 2014 Flat HTML vs Red Banana 3D Spatial WebGL", fit: "Outbound B2B Website Teardown Pitch Demos (Rs 1.5L-3.5L Deals)" },
-  "RB_SCULPT3D": { id: "RB-09", anchor: "RB-09", cat: "Landing Pages & 3D Heroes", mech: "Real-centimetre 3D bronze sculpture scale comparator (33cm to 125cm vs 170cm human reference)", fit: "K R Nariman 3D Gallery, Karkhana Sculptures, One More Object" }
+  "RB_SCULPT3D": { id: "RB-09", anchor: "RB-09", cat: "Landing Pages & 3D Heroes", mech: "Real-centimetre 3D bronze sculpture scale comparator (33cm to 125cm vs 170cm human reference)", fit: "K R Nariman 3D Gallery, Karkhana Sculptures, One More Object" },
+  "WBY_IGLOO": { id: "WBY-01", anchor: "WBY-01", cat: "Webby Winners", mech: "2-colour slate/ice palette (#b6bac5 / #383e4e) + frost & chromatic aberration scene transition", fit: "3D Luxury & Collectibles Showcases (Webby 2026 Visual Design Winner)" },
+  "WBY_EXAT": { id: "WBY-02", anchor: "WBY-02", cat: "Webby Winners", mech: "Live variable width-vs-weight 'Design Space' matrix + cap-height/baseline anatomical guide lines", fit: "Editorial Microsites, Type Specimens & Brand Systems (Webby 2026 Nominee)" },
+  "WBY_AETHER": { id: "WBY-03", anchor: "WBY-03", cat: "Webby Winners", mech: "Hold-to-Start sweep-mask trigger + bracketed machine telemetry HUD ([ 001 ], [ EQUALIZER ], [ AI ])", fit: "AI Hardware, Robotics & High-Tech Product Launches (Webby 2026 Motion Winner)" },
+  "WBY_DICH": { id: "WBY-04", anchor: "WBY-04", cat: "Webby Winners", mech: "Live X/Y pointer coordinate readout in header + garment touch hotspots that re-tint page chrome", fit: "Fashion Lookbooks, Karkhana Textiles & Interactive Catalogs (Webby 2026 Best UI Winner)" },
+  "WBY_WARHOL": { id: "WBY-05", anchor: "WBY-05", cat: "Webby Winners", mech: "Archival museum plate (Year, Dept., Silkscreen Technique) + 3-step in-page ticket checkout drawer", fit: "Museum Mosaic, Constitution Museum JGU, Karkhana Masterclasses (Webby 2026 Winner)" },
+  "WBY_SAVOR": { id: "WBY-06", anchor: "WBY-06", cat: "Webby Winners", mech: "One-word-per-line 'Made Without' subtraction manifesto + interactive un-melting butter shader block", fit: "D2C Food/Beverage, Clean Beauty & Sustainable Craft Brands (Webby 2026 Winner)" },
+  "WBY_IMAGINARIUM": { id: "WBY-07", anchor: "WBY-07", cat: "Webby Winners", mech: "Pre-entry headphone cue + visitor comfort switches (Sound, Subtitles, Camera) + 0-100% chapter bar", fit: "Immersive 3D Cultural Exhibitions & Audio-Guided Tours (Webby 2026 Winner)" },
+  "WBY_ROCKHALL": { id: "WBY-08", anchor: "WBY-08", cat: "Webby Winners", mech: "Provenance & sonic lineage card tracing a single work/loop across 1669 -> 1864 -> 1944 -> 2026", fit: "Karkhana Shilp Guru Provenance Passports & Heritage Archives (Webby 2026 Nominee)" },
+  "WBY_TRACE": { id: "WBY-09", anchor: "WBY-09", cat: "Webby Winners", mech: "Live status pill badge (Critical / Advancing / Resolved) + percentage verdict facet filter", fit: "Research Portals, Red Banana Labs Benchmarks & Public Data Hubs (Webby 2026 Winner)" },
+  "WBY_RADIOALICE": { id: "WBY-10", anchor: "WBY-10", cat: "Webby Winners", mech: "Timestamped archival broadcast transcript cues + 1-tap Quick Exit privacy safety bar", fit: "Documentary Storytelling, Oral History Archives & Sensitive Portals (Webby 2026 Winner)" },
+  "WBY_LLL": { id: "WBY-11", anchor: "WBY-11", cat: "Webby Winners", mech: "Interactive situational dialogue quiz prompt that awards a shareable Rank S / Master Xplorer card", fit: "EdTech Platforms, Cultre Heritage Quizzes & Interactive Onboarding (Webby 2026 Winner)" },
+  "WBY_PRIMLAND": { id: "WBY-12", anchor: "WBY-12", cat: "Webby Winners", mech: "Interactive aerial resort elevation pins + 1-click 'Send Trip Plan to AI Concierge' handoff", fit: "Luxury Heritage Hotels, Eco-Resorts & Outbound Hospitality Pitches (Webby + PV Winner)" }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -1420,5 +1516,254 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
       })
       .join("");
+  }
+
+  // =========================================================================
+  // SECTION 6: 2026 WEBBY AWARDS WINNERS & NOMINEES INTERACTIVE HANDLERS
+  // =========================================================================
+
+  // WBY-01: Igloo Inc Ice-Block & Chromatic Aberration Switcher
+  const wbyIglooStage = document.getElementById("wbyIglooStage");
+  const wbyIceBlock = document.getElementById("wbyIceBlock");
+  const wbyIglooIdx = document.getElementById("wbyIglooIdx");
+  const wbyIglooNextBtn = document.getElementById("wbyIglooNextBtn");
+  if (wbyIglooNextBtn && wbyIglooStage && wbyIceBlock) {
+    const blocks = [
+      { label: "🧊 CRYO ARTIFACT #01", radius: "16px" },
+      { label: "💎 GLACIAL PRISM #02", radius: "28px 8px 28px 8px" },
+      { label: "❄️ FROST MONOLITH #03", radius: "8px 26px 10px 26px" },
+      { label: "💠 ARCTIC CORE #04", radius: "999px" }
+    ];
+    let bIdx = 0;
+    wbyIglooNextBtn.addEventListener("click", () => {
+      bIdx = (bIdx + 1) % blocks.length;
+      wbyIglooStage.classList.add("frost-glitch");
+      setTimeout(() => {
+        wbyIceBlock.textContent = blocks[bIdx].label;
+        wbyIceBlock.style.borderRadius = blocks[bIdx].radius;
+        if (wbyIglooIdx) wbyIglooIdx.textContent = `0${bIdx + 1} / 04`;
+        wbyIglooStage.classList.remove("frost-glitch");
+      }, 220);
+    });
+  }
+
+  // WBY-02: Exat Typeface Variable Tester & Design Space Matrix
+  const wbyExatSpecimen = document.getElementById("wbyExatSpecimen");
+  const wbyExatReadout = document.getElementById("wbyExatReadout");
+  const wbyExatSizeRange = document.getElementById("wbyExatSizeRange");
+  let exatWidthLabel = "Condensed";
+  document.querySelectorAll("#wbyExatWidthRow .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#wbyExatWidthRow .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      exatWidthLabel = btn.getAttribute("data-label") || "Standard";
+      if (wbyExatSpecimen) {
+        wbyExatSpecimen.style.letterSpacing =
+          exatWidthLabel === "Condensed" ? "-0.04em" : exatWidthLabel === "Wide" ? "0.14em" : "0.02em";
+      }
+      if (wbyExatReadout && wbyExatSizeRange) {
+        wbyExatReadout.textContent = `${exatWidthLabel} • 700 • ${wbyExatSizeRange.value}px`;
+      }
+    });
+  });
+  if (wbyExatSizeRange && wbyExatSpecimen) {
+    wbyExatSizeRange.addEventListener("input", () => {
+      wbyExatSpecimen.style.fontSize = `${wbyExatSizeRange.value}px`;
+      if (wbyExatReadout) {
+        wbyExatReadout.textContent = `${exatWidthLabel} • 700 • ${wbyExatSizeRange.value}px`;
+      }
+    });
+  }
+
+  // WBY-03: The Spark & Aether 1 Hold-to-Start Sweep & Telemetry HUD
+  const wbyAetherHud = document.getElementById("wbyAetherHud");
+  const wbyHoldStartBtn = document.getElementById("wbyHoldStartBtn");
+  const wbyAetherStep = document.getElementById("wbyAetherStep");
+  const wbyAetherMode = document.getElementById("wbyAetherMode");
+  const wbyAetherStatus = document.getElementById("wbyAetherStatus");
+  const wbyHoldLabel = document.getElementById("wbyHoldLabel");
+  if (wbyHoldStartBtn && wbyAetherHud) {
+    const modes = ["[ NOISE CONTROL ]", "[ EQUALIZER ]", "[ AI ASSISTANT ]", "[ SPATIAL AUDIO ]"];
+    let mIdx = 0;
+    wbyHoldStartBtn.addEventListener("click", () => {
+      mIdx = (mIdx + 1) % modes.length;
+      wbyAetherHud.classList.toggle("engaged");
+      const active = wbyAetherHud.classList.contains("engaged");
+      if (wbyAetherStep) wbyAetherStep.textContent = `[ 00${mIdx + 1} ]`;
+      if (wbyAetherMode) wbyAetherMode.textContent = modes[mIdx];
+      if (wbyAetherStatus) wbyAetherStatus.textContent = active ? "ONLINE" : "STANDBY";
+      if (wbyHoldLabel) {
+        wbyHoldLabel.textContent = active
+          ? `✅ Neural Core Locked: ${modes[mIdx]}`
+          : "⚡ Click or Hold to Engage Neural Core";
+      }
+    });
+  }
+
+  // WBY-04: DICH Fashion Live X/Y Pointer Readout & Garment Hotspots
+  const wbyDichStage = document.getElementById("wbyDichStage");
+  const wbyDichCoords = document.getElementById("wbyDichCoords");
+  const wbyDichHotspotLabel = document.getElementById("wbyDichHotspotLabel");
+  if (wbyDichStage && wbyDichCoords) {
+    wbyDichStage.addEventListener("mousemove", (e) => {
+      const rect = wbyDichStage.getBoundingClientRect();
+      const x = String(Math.max(0, Math.round(e.clientX - rect.left))).padStart(4, "0");
+      const y = String(Math.max(0, Math.round(e.clientY - rect.top))).padStart(4, "0");
+      wbyDichCoords.textContent = `X. ${x} // Y. ${y}`;
+    });
+  }
+  document.querySelectorAll("#wbyDichHotspots .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#wbyDichHotspots .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (wbyDichStage) {
+        wbyDichStage.style.setProperty("--dich-bg", btn.getAttribute("data-bg") || "#1c1624");
+        wbyDichStage.style.setProperty("--dich-fg", btn.getAttribute("data-fg") || "#C5C4FF");
+      }
+      if (wbyDichHotspotLabel) {
+        wbyDichHotspotLabel.textContent = "HOTSPOT: " + (btn.getAttribute("data-spot") || "NEON VEINS");
+      }
+    });
+  });
+
+  // WBY-05: Warhol Art 3-Step In-Page Ticket Drawer
+  const wbyWarholStepText = document.getElementById("wbyWarholStepText");
+  const wbyWarholBookBtn = document.getElementById("wbyWarholBookBtn");
+  let warholTier = "Personal Pass ($18)";
+  let warholStep = 1;
+  document.querySelectorAll("#wbyWarholTiers .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#wbyWarholTiers .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      warholTier = btn.getAttribute("data-tier") || "Personal Pass ($18)";
+      warholStep = 1;
+      if (wbyWarholStepText) wbyWarholStepText.textContent = `Step 1/3: Selected ${warholTier}`;
+      if (wbyWarholBookBtn) wbyWarholBookBtn.textContent = "Continue to Visitor Details →";
+    });
+  });
+  if (wbyWarholBookBtn && wbyWarholStepText) {
+    wbyWarholBookBtn.addEventListener("click", () => {
+      warholStep = (warholStep % 3) + 1;
+      if (warholStep === 2) {
+        wbyWarholStepText.textContent = `Step 2/3: Drop Your Digits for ${warholTier}`;
+        wbyWarholBookBtn.textContent = "Confirm Warhol Pass →";
+      } else if (warholStep === 3) {
+        wbyWarholStepText.textContent = `✅ Confirmed! ${warholTier} Issued (#WA-1962)`;
+        wbyWarholBookBtn.textContent = "Reset Ticket Drawer ↺";
+      } else {
+        wbyWarholStepText.textContent = "Step 1/3: Choose Exhibition Pass Tier";
+        wbyWarholBookBtn.textContent = "Book Exhibition Ticket →";
+      }
+    });
+  }
+
+  // WBY-06: Savor & Seedlip Subtraction Manifesto & Un-Melting Butter
+  const wbyButterOrb = document.getElementById("wbyButterOrb");
+  const wbyButterState = document.getElementById("wbyButterState");
+  if (wbyButterOrb) {
+    wbyButterOrb.addEventListener("click", () => {
+      wbyButterOrb.classList.toggle("unmelted");
+      const unmelted = wbyButterOrb.classList.contains("unmelted");
+      if (wbyButterState) {
+        wbyButterState.textContent = unmelted ? "Solid Block Restored ✨" : "Click to Un-Melt";
+      }
+    });
+  }
+
+  // WBY-07: National Gallery Imaginarium & SLV Visitor Comfort Console & Chapter Bar
+  const wbyChapterScrub = document.getElementById("wbyChapterScrub");
+  const wbyChapterReadout = document.getElementById("wbyChapterReadout");
+  document.querySelectorAll("#wbyComfortRow .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+    });
+  });
+  if (wbyChapterScrub && wbyChapterReadout) {
+    wbyChapterScrub.addEventListener("input", () => {
+      const pct = Number(wbyChapterScrub.value) || 0;
+      const chap = Math.min(5, Math.floor(pct / 20) + 1);
+      wbyChapterReadout.textContent = `Chapter 0${chap} • ${pct}%`;
+    });
+  }
+
+  // WBY-08: Rock Hall & Tracing Art Provenance Timeline
+  const wbyProvenanceDesc = document.getElementById("wbyProvenanceDesc");
+  document.querySelectorAll("#wbyProvenanceYears .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#wbyProvenanceYears .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (wbyProvenanceDesc) {
+        wbyProvenanceDesc.textContent = btn.getAttribute("data-story") || "";
+      }
+    });
+  });
+
+  // WBY-09: The Trace & CFR Live Status Pill & Verdict Filter
+  const wbyTrackerTitle = document.getElementById("wbyTrackerTitle");
+  const wbyTrackerBadge = document.getElementById("wbyTrackerBadge");
+  document.querySelectorAll("#wbyTrackerPills .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#wbyTrackerPills .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (wbyTrackerTitle) {
+        wbyTrackerTitle.textContent = "DATA HUB: " + (btn.getAttribute("data-count") || "");
+      }
+      if (wbyTrackerBadge) {
+        wbyTrackerBadge.textContent = btn.getAttribute("data-status") || "";
+        wbyTrackerBadge.style.color = btn.getAttribute("data-color") || "#fca5a5";
+      }
+    });
+  });
+
+  // WBY-10: Radio Alice Timestamped Transcript & Plan C Quick-Exit Safety Bar
+  const wbyAliceTime = document.getElementById("wbyAliceTime");
+  const wbyAliceQuote = document.getElementById("wbyAliceQuote");
+  const wbyQuickExitBtn = document.getElementById("wbyQuickExitBtn");
+  document.querySelectorAll("#wbyAliceCues .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#wbyAliceCues .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (wbyAliceTime) wbyAliceTime.textContent = "🎙️ 12 MAR 1977 • " + (btn.getAttribute("data-time") || "");
+      if (wbyAliceQuote) wbyAliceQuote.textContent = btn.getAttribute("data-quote") || "";
+    });
+  });
+  if (wbyQuickExitBtn) {
+    wbyQuickExitBtn.addEventListener("click", () => {
+      if (wbyAliceTime) wbyAliceTime.textContent = "🛡️ QUICK EXIT SHIELD ENGAGED";
+      if (wbyAliceQuote) wbyAliceQuote.textContent = "Session masked -> Weather & Neutral Forecast View Active.";
+      showToast("Quick Exit Privacy Shield Triggered!");
+    });
+  }
+
+  // WBY-11: Little Language Lessons & Meister Scenario Quiz
+  const wbyQuizBadge = document.getElementById("wbyQuizBadge");
+  const wbyQuizPrompt = document.getElementById("wbyQuizPrompt");
+  document.querySelectorAll("#wbyQuizOptions .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#wbyQuizOptions .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const rank = btn.getAttribute("data-rank") || "RANK S • MASTER XPLORER 🏆";
+      if (wbyQuizBadge) wbyQuizBadge.textContent = rank;
+      if (wbyQuizPrompt) wbyQuizPrompt.textContent = "✅ Scenario Cleared! Shareable Rank Card Ready.";
+    });
+  });
+
+  // WBY-12: Primland Explore Aerial Map Pins & AI Concierge Handoff
+  const wbyPrimlandElev = document.getElementById("wbyPrimlandElev");
+  const wbyPrimlandAiBtn = document.getElementById("wbyPrimlandAiBtn");
+  let selectedPin = "Observatory Dome (2,850 ft)";
+  document.querySelectorAll("#wbyPrimlandPins .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#wbyPrimlandPins .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      selectedPin = btn.getAttribute("data-pin") || "Observatory Dome (2,850 ft)";
+      if (wbyPrimlandElev) wbyPrimlandElev.textContent = selectedPin.toUpperCase();
+    });
+  });
+  if (wbyPrimlandAiBtn) {
+    wbyPrimlandAiBtn.addEventListener("click", () => {
+      wbyPrimlandAiBtn.textContent = `✅ Dispatched "${selectedPin}" to AI Concierge`;
+      showToast(`Trip Plan (${selectedPin}) sent to AI Concierge!`);
+    });
   }
 });
