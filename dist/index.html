@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700;800&family=Parkinsans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Syne:wght@700;800&family=Tektur:wght@700;800&family=Tomorrow:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="rb-stamp.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="rb-stamp.css?v=20261024c" />
+  <link rel="stylesheet" href="styles.css?v=20261024c" />
 </head>
 <body>
 
@@ -61,18 +61,19 @@
 
   <!-- Private Password-Enabled Client View Gate -->
   <div class="client-gate-overlay" id="clientGateOverlay">
-    <div class="client-gate-card">
+    <form class="client-gate-card" id="clientGateForm" autocomplete="off">
       <div class="brand-orb" style="margin:0 auto 14px;width:54px;height:54px;font-size:1.2rem;">RB</div>
       <div class="hero-badge">Private Client Component Marketplace</div>
       <h2 style="font-size:1.55rem;margin-bottom:8px;">Red Banana UI &amp; Motion Vault</h2>
       <p style="font-size:0.88rem;color:var(--text-muted);">Enter your client access passcode to explore and shortlist interactive 3D buttons, toggles, and landing page animations for your project.</p>
-      <input type="password" id="clientPassInput" class="gate-input" placeholder="Enter Passcode (REDBANANA)" aria-label="Client Passcode" />
+      <input type="text" name="username" value="redbanana-client" autocomplete="username" style="display:none;" aria-hidden="true" />
+      <input type="password" id="clientPassInput" name="passcode" autocomplete="current-password" class="gate-input" placeholder="Enter Passcode (REDBANANA)" aria-label="Client Passcode" />
       <div id="gateErrorMsg" style="color:#f87171;font-size:0.8rem;min-height:20px;margin-bottom:6px;"></div>
       <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-        <button class="copy-btn" id="unlockGateBtn" style="background:var(--accent-amber);color:#090b10;padding:0 24px;" type="button">Unlock Marketplace →</button>
+        <button class="copy-btn" id="unlockGateBtn" style="background:var(--accent-amber);color:#090b10;padding:0 24px;" type="submit">Unlock Marketplace →</button>
         <button class="copy-btn" id="copyVipLinkBtn" type="button">📋 Copy Client Share Link + Passcode</button>
       </div>
-    </div>
+    </form>
   </div>
 
   <main>
@@ -1610,15 +1611,15 @@
           <strong id="inspectorTitle" style="font-size:1.1rem;">Component Inspector</strong>
           <div id="inspectorSub" style="font-size:0.78rem;color:var(--text-muted);">Live Stage &amp; Copy-Paste HTML/CSS Snippet</div>
         </div>
-        <div style="display:flex;gap:8px;">
-          <button class="copy-btn" id="copyInspectorCodeBtn" type="button">📋 Copy HTML Snippet</button>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="copy-btn" id="copyInspectorCodeBtn" type="button">📋 Copy HTML + CSS Snippet</button>
           <button class="copy-btn" id="closeInspectorBtn" style="background:transparent;" type="button">✕ Close</button>
         </div>
       </div>
       <div class="inspector-body">
         <div id="inspectorLiveStage" class="comp-stage" style="min-height:260px;border-radius:18px;border:1px solid var(--border-glass);"></div>
         <div>
-          <div style="font-size:0.78rem;font-weight:800;color:var(--text-muted);margin-bottom:6px;">EXTRACTED COMPONENT HTML STRUCTURE:</div>
+          <div style="font-size:0.78rem;font-weight:800;color:var(--text-muted);margin-bottom:6px;">EXTRACTED SELF-CONTAINED HTML + CSS SNIPPET:</div>
           <pre class="inspector-pre" id="inspectorCodePre"></pre>
         </div>
       </div>
@@ -1635,7 +1636,7 @@
 
   <div class="copy-toast" id="copyToast">Copied Component ID to Clipboard!</div>
 
-  <script src="rb-stamp.js" defer></script>
-  <script src="app.js" defer></script>
+  <script src="rb-stamp.js?v=20261024c" defer></script>
+  <script src="app.js?v=20261024c" defer></script>
 </body>
 </html>

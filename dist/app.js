@@ -592,10 +592,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  if (unlockBtn) unlockBtn.addEventListener("click", tryUnlock);
+  const clientGateForm = document.getElementById("clientGateForm");
+  if (clientGateForm) {
+    clientGateForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      tryUnlock();
+    });
+  }
+  if (unlockBtn) {
+    unlockBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      tryUnlock();
+    });
+  }
   if (passInput) {
     passInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") tryUnlock();
+      if (e.key === "Enter") {
+        e.preventDefault();
+        tryUnlock();
+      }
     });
   }
   if (toggleLockBtn && gateOverlay) {
@@ -1317,8 +1332,56 @@ document.addEventListener("DOMContentLoaded", () => {
   const inspectorCodePre = document.getElementById("inspectorCodePre");
   const copyInspectorCodeBtn = document.getElementById("copyInspectorCodeBtn");
   const closeInspectorBtn = document.getElementById("closeInspectorBtn");
+  let activeMovedStage = null;
+
+  function extractMatchingCss(stageEl) {
+    if (!stageEl) return "";
+    const classes = new Set();
+    stageEl.classList.forEach((c) => {
+      if (c !== "comp-stage") classes.add("." + c);
+    });
+    stageEl.querySelectorAll("*").forEach((el) => {
+      el.classList.forEach((c) => classes.add("." + c));
+      if (el.id) classes.add("#" + el.id);
+    });
+    if (classes.size === 0) return "";
+    const matched = [];
+    for (const sheet of Array.from(document.styleSheets)) {
+      try {
+        for (const rule of Array.from(sheet.cssRules || [])) {
+          if (rule.selectorText) {
+            for (const token of classes) {
+              if (rule.selectorText.includes(token)) {
+                matched.push(rule.cssText);
+                break;
+              }
+            }
+          }
+        }
+      } catch (_) {
+        // Ignore cross-origin font stylesheets
+      }
+    }
+    return matched.slice(0, 18).join("\n");
+  }
+
+  function closeInspector() {
+    if (activeMovedStage && inspectorLiveStage) {
+      while (inspectorLiveStage.firstChild) {
+        activeMovedStage.appendChild(inspectorLiveStage.firstChild);
+      }
+      inspectorLiveStage.className = "comp-stage";
+      inspectorLiveStage.removeAttribute("style");
+      inspectorLiveStage.style.minHeight = "260px";
+      inspectorLiveStage.style.borderRadius = "18px";
+      inspectorLiveStage.style.border = "1px solid var(--border-glass)";
+      activeMovedStage = null;
+    }
+    if (inspectorModal) inspectorModal.classList.remove("open");
+  }
 
   function openInspectorForCard(cardId) {
+    closeInspector();
     const card = document.getElementById(cardId);
     if (!card || !inspectorModal) return;
     const h3 = card.querySelector("h3");
@@ -1327,12 +1390,21 @@ document.addEventListener("DOMContentLoaded", () => {
       inspectorTitle.textContent = `${cardId} • ${h3 ? h3.textContent : "Interactive Stage"}`;
     }
     const rawHtml = stage ? stage.innerHTML.trim() : card.innerHTML.trim();
-    if (inspectorLiveStage && stage) {
-      inspectorLiveStage.innerHTML = stage.innerHTML;
-    }
-    const snippet = `<!-- Red Banana UI Vault Component: ${cardId} -->\n<div class="comp-stage">\n  ${rawHtml}\n</div>`;
+    const cssRules = extractMatchingCss(stage);
+    const cssBlock = cssRules ? `\n\n<style>\n${cssRules}\n</style>` : "";
+    const snippet = `<!-- Red Banana UI Vault Component: ${cardId} -->\n<div class="comp-stage">\n  ${rawHtml}\n</div>${cssBlock}`;
     if (inspectorCodePre) {
       inspectorCodePre.textContent = snippet;
+    }
+    if (inspectorLiveStage && stage) {
+      activeMovedStage = stage;
+      inspectorLiveStage.className = stage.className;
+      if (stage.getAttribute("style")) {
+        inspectorLiveStage.setAttribute("style", stage.getAttribute("style") + ";min-height:260px;border-radius:18px;");
+      }
+      while (stage.firstChild) {
+        inspectorLiveStage.appendChild(stage.firstChild);
+      }
     }
     inspectorModal.classList.add("open");
   }
@@ -1371,18 +1443,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   if (closeInspectorBtn && inspectorModal) {
-    closeInspectorBtn.addEventListener("click", () => inspectorModal.classList.remove("open"));
+    closeInspectorBtn.addEventListener("click", closeInspector);
     inspectorModal.addEventListener("click", (e) => {
-      if (e.target === inspectorModal) inspectorModal.classList.remove("open");
+      if (e.target === inspectorModal) closeInspector();
     });
   }
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && inspectorModal && inspectorModal.classList.contains("open")) {
+      closeInspector();
+    }
+  });
   if (copyInspectorCodeBtn && inspectorCodePre) {
     copyInspectorCodeBtn.addEventListener("click", () => {
       const code = inspectorCodePre.textContent || "";
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(code).catch(() => {});
       }
-      showToast("Copied Component HTML Snippet to Clipboard!");
+      showToast("Copied Self-Contained HTML + CSS Snippet!");
     });
   }
 
