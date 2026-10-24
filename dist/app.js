@@ -450,15 +450,49 @@ document.addEventListener("DOMContentLoaded", () => {
     if (gateOverlay) gateOverlay.classList.add("locked");
   }
 
-  function tryUnlock() {
+  // SHA-256 hashes of valid client passcodes ("REDBANANA", "2026", "VIP") + brute-force lockout
+  const VALID_PASS_HASHES = new Set([
+    "ef47de4df957e393a326f37e102d1d2267ef9633ab716a9f0fd6c7be2186e51f",
+    "7c04837eb356565e28bb14e5a1dedb240a5ac2561f8ed318c54a27906a9665e2",
+    "f4ef8359d65f039cefb791ffbe054e2ac9b485540de13d6bfaa734ca40eb8570"
+  ]);
+  let failedGateAttempts = 0;
+  let gateLockoutUntil = 0;
+
+  async function sha256Hex(str) {
+    if (window.crypto && window.crypto.subtle) {
+      const buf = await window.crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
+    }
+    return "";
+  }
+
+  async function tryUnlock() {
+    if (Date.now() < gateLockoutUntil) {
+      const sec = Math.ceil((gateLockoutUntil - Date.now()) / 1000);
+      if (gateErr) gateErr.textContent = `Too many attempts. Locked for ${sec}s.`;
+      return;
+    }
     const val = (passInput ? passInput.value : "").trim().toUpperCase();
-    if (!val || val === "REDBANANA" || val === "2026" || val === "VIP") {
+    if (!val) {
+      if (gateErr) gateErr.textContent = "Please enter your client passcode.";
+      return;
+    }
+    const hash = await sha256Hex(val);
+    if (VALID_PASS_HASHES.has(hash) || (!hash && (val === "REDBANANA" || val === "2026"))) {
+      failedGateAttempts = 0;
       sessionStorage.setItem("rb_vault_unlocked", "1");
       if (gateOverlay) gateOverlay.classList.remove("locked");
       if (gateErr) gateErr.textContent = "";
       showToast("Unlocked Red Banana UI & Motion Marketplace!");
     } else {
-      if (gateErr) gateErr.textContent = "Invalid passcode. Use REDBANANA or 2026.";
+      failedGateAttempts += 1;
+      if (failedGateAttempts >= 5) {
+        gateLockoutUntil = Date.now() + 30000;
+        if (gateErr) gateErr.textContent = "5 failed attempts. Locked for 30s.";
+      } else {
+        if (gateErr) gateErr.textContent = "Invalid passcode. Contact Red Banana Studio for access.";
+      }
     }
   }
 
@@ -1263,8 +1297,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableCatPills = document.querySelectorAll("#tableCatPills .filter-pill");
   let activeTableCat = "ALL";
 
+  function escapeHtml(str) {
+    return String(str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   const allCatalogRows = EMBEDDED_CATALOG.map((it) => {
-    const safeTitle = (it.title || it.shortcode).replace(/</g, "&lt;");
+    const safeTitle = escapeHtml(it.title || it.shortcode);
     const mapped = REPLICA_MAP[it.shortcode] || {
       id: `IG-${String(it.index).padStart(2, "0")}`,
       anchor: "BTN-01",
@@ -1273,16 +1316,17 @@ document.addEventListener("DOMContentLoaded", () => {
       fit: "Client Website UI Library"
     };
     return {
-      index: it.index,
-      shortcode: it.shortcode,
-      href: it.href,
-      thumb_file: it.thumb_file,
+      index: Number(it.index) || 0,
+      shortcode: escapeHtml(it.shortcode),
+      href: escapeHtml(it.href),
+      thumb_file: escapeHtml(it.thumb_file),
       title: safeTitle,
-      libId: mapped.id,
-      cat: mapped.cat,
-      mech: mapped.mech,
-      fit: mapped.fit,
-      liveAnchor: mapped.anchor
+      libId: escapeHtml(mapped.id),
+      rawCat: mapped.cat,
+      cat: escapeHtml(mapped.cat),
+      mech: escapeHtml(mapped.mech),
+      fit: escapeHtml(mapped.fit),
+      liveAnchor: escapeHtml(mapped.anchor)
     };
   });
 
@@ -1290,7 +1334,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!masterBody) return;
     const q = (searchInput ? searchInput.value : "").trim().toLowerCase();
     const filtered = allCatalogRows.filter((row) => {
-      const matchCat = activeTableCat === "ALL" || row.cat === activeTableCat;
+      const matchCat = activeTableCat === "ALL" || row.rawCat === activeTableCat || row.cat === activeTableCat;
       const matchQ =
         !q ||
         row.libId.toLowerCase().includes(q) ||
