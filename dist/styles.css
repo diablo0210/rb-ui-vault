@@ -16,10 +16,18 @@
 html[data-theme="light"] {
   --bg-deep: #eef2f9;
   --bg-card: #ffffff;
-  --bg-stage: #e4ebf5;
+  --bg-stage: #0f1523;
   --text-main: #0f172a;
   --text-muted: #475569;
-  --border-glass: rgba(15, 23, 42, 0.12);
+  --border-glass: rgba(15, 23, 42, 0.14);
+}
+
+html[data-theme="light"] .stat-box {
+  background: #e4ebf5;
+}
+
+.comp-stage {
+  color: #f3f6fc;
 }
 
 * {

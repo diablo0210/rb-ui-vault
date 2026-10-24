@@ -461,14 +461,14 @@ const REPLICA_MAP = {
   "De11s9jvFSb": { id: "CTL-01", anchor: "CTL-01", cat: "Toggles & Controls", mech: "Skeuomorphic beveled metallic track with glowing neon ring knob & day/night reflection", fit: "Header Theme Switcher (Light/Dark Mode) for Flagship Sites" },
   "DdjbLI5ofGq": { id: "CTL-02", anchor: "CTL-02", cat: "Toggles & Controls", mech: "Circular aircraft cabin window toggle that flies a 3D plane across day/night sky", fit: "Travel Filters, Offline/Online Mode Toggles, Interactive Dashboards" },
   "DeevvT0v1KU": { id: "CTL-03", anchor: "CTL-03", cat: "Toggles & Controls", mech: "Refractive mercury/jelly range slider thumb with velocity-based stretch physics", fit: "Price Range Filters, ROI Calculators, 3D Scale/Lighting Controls" },
-  "DeewUAYvZEY": { id: "CTL-03B", anchor: "CTL-03", cat: "Toggles & Controls", mech: "3D animated liquid jelly slider variant with soft glass track reflection", fit: "Interactive Configurators, Audio/Video Scrubbers" },
+  "DeewUAYvZEY": { id: "CTL-03B", anchor: "CTL-03B", cat: "Toggles & Controls", mech: "3D animated liquid jelly slider variant with soft glass track reflection", fit: "Interactive Configurators, Audio/Video Scrubbers" },
   "DehVoUHPjbP": { id: "CTL-04", anchor: "CTL-04", cat: "Toggles & Controls", mech: "Suspended dowel paper roll unrolls pricing tiers and tears off selected receipt", fit: "SaaS Pricing Selectors, Service Package Pickers, Checkout Summaries" },
   "DdwM0Zcov79": { id: "CTL-05", anchor: "CTL-05", cat: "Navigation", mech: "True SVG feGaussianBlur + feColorMatrix metaball gooey liquid detachment", fit: "Mobile Bottom Navigation Bars, App-Style Floating Docks" },
   "Ddb8C3nOl3M": { id: "CTL-06", anchor: "CTL-06", cat: "Navigation", mech: "5 dynamic theme modes (Laser, Ink, Thunder, Solar, Acid) transforming dock glow & motion", fit: "Multi-Theme Portfolios, Gaming/Tech Showcases, Red Banana Labs" },
   "Dd__ssyowWg": { id: "CTL-07", anchor: "CTL-07", cat: "Navigation", mech: "Water-droplet refractive glass hamburger button expanding into floating pill tray", fit: "Mobile Header Menus, Spatial WebGL Overlay Controls" },
   "Ddy_-CUoRRk": { id: "NAV-08", anchor: "NAV-08", cat: "Navigation", mech: "Glossy black pill tab navigation with sliding frosted glass indicator", fit: "Product Category Switchers, Case Study Filter Bars" },
   "Ddjz9CPocMn": { id: "RB-12", anchor: "RB-12", cat: "Navigation", mech: "Navigation Tabs V5 with clean glowing laser underline & icon micro-bounce", fit: "SaaS Dashboards, Documentation & Research Portals" },
-  "DePcLfnIa4J": { id: "NAV-10", anchor: "CTL-06", cat: "Navigation", mech: "Collection of 14 distinct stylish tab navigation bar styles & active indicators", fit: "Universal Reference Sheet for Header & Sub-Nav Bars" },
+  "DePcLfnIa4J": { id: "NAV-10", anchor: "NAV-10", cat: "Navigation", mech: "Collection of 14 distinct stylish tab navigation bar styles & active indicators", fit: "Universal Reference Sheet for Header & Sub-Nav Bars" },
   "Ddeb1QzItSs": { id: "CTL-08", anchor: "CTL-08", cat: "Toggles & Controls", mech: "Continuous figure-8 infinity loop neon track with rolling luminous sphere", fit: "3D Scene Preloaders, AI Generation Wait States" },
   "De16QLgPl9c": { id: "CRD-01", anchor: "CRD-01", cat: "Cards & Checkouts", mech: "Cursor-tracked specular rim spotlight + expanding concentric water ripples on click", fit: "Feature Bento Grids, Service Tier Cards, Interactive Showcases" },
   "DeM5iZKv8AV": { id: "CRD-02", anchor: "CRD-02", cat: "Cards & Checkouts", mech: "Translucent glass Visa card dips into 3D POS terminal and prints verified state", fit: "Instant UPI/Card Checkout Drawers, Premium Membership Upgrades" },
@@ -492,14 +492,14 @@ const REPLICA_MAP = {
   "DeUWlbmjJ99": { id: "RB-04", anchor: "RB-04", cat: "Shaders & Typography", mech: "HTML5 Canvas cursor-repel spring particle typography at 60fps", fit: "Interactive Hero Headlines, Red Banana Tech Landing Pages" },
   "DaDRFEezrOP": { id: "RB-05", anchor: "RB-05", cat: "Buttons", mech: "VengeanceUI cursor-magnetic pull button with 360-degree rotating conic laser border", fit: "High-Conversion SaaS & Agency Primary Hero CTAs" },
   "Dd6VnMClIzz": { id: "RB-06", anchor: "RB-06", cat: "Cards & Checkouts", mech: "Skiper UI 3D perspective depth card stack + Motion Primitives kinetic 3D word flip", fit: "Case Study Showcases, Product Feature Stacks, Dynamic Hero Titles" },
-  "Dd4fRA8KQr4": { id: "RB-09", anchor: "RB-09", cat: "Landing Pages & 3D Heroes", mech: "Interactive 3D spatial museum plinth & real-centimetre scale comparison stage", fit: "K R Nariman 3D Bronzes, One More Object 3D Replicas Store" },
+  "Dd4fRA8KQr4": { id: "RB-09B", anchor: "RB-09B", cat: "Landing Pages & 3D Heroes", mech: "Bruno Simon Three.js Journey 3D isometric plinth & orbit turntable stage", fit: "K R Nariman 3D Bronzes, One More Object 3D Replicas Store" },
   "DcwwzjdjELm": { id: "RB-07", anchor: "RB-07", cat: "Shaders & Typography", mech: "Kinetic 3D rotateX flipping word swap hero headline with spring physics", fit: "Agency Value-Proposition Headlines & Viral Reel Intro Hooks" },
-  "DeJmzELMnE6": { id: "RB-02B", anchor: "RB-02", cat: "Shaders & Typography", mech: "Curated editorial & geometric open-source font specimen switcher", fit: "Luxury Editorial Microsites & Cultural Archives" },
-  "DejzNTBMpTQ": { id: "RB-08B", anchor: "RB-08", cat: "Landing Pages & 3D Heroes", mech: "Infinite design canvas & before/after website transformation comparator", fit: "Client Pitch Comparisons & Spec Redesign Demos" },
-  "DehZDbSDWxz": { id: "RB-03B", anchor: "RB-03", cat: "Shaders & Typography", mech: "66 production DESIGN.md token palettes (Linear, Stripe, Ferrari, Vercel)", fit: "Rapid Brand Theme Switching for Outbound Spec Demos" },
-  "Dd2IEVjL1-_": { id: "RB-11B", anchor: "RB-11", cat: "Cards & Checkouts", mech: "Anti-AI-slop crisp 1px border & refractive depth card architecture", fit: "B2B SaaS & Executive Dashboards" },
-  "Ddx-cbVnEVA": { id: "RB-04B", anchor: "RB-04", cat: "Shaders & Typography", mech: "Interactive WebGL/Canvas particle & shader primitives from top GitHub repos", fit: "Red Banana Labs R&D Demonstrations" },
-  "DdoV5mik0du": { id: "RB-07B", anchor: "RB-07", cat: "Shaders & Typography", mech: "Deterministic frame-accurate kinetic typography for automated Reel rendering", fit: "@redbananatech & @onemoreobject Automated Video Reels" },
+  "DeJmzELMnE6": { id: "RB-02B", anchor: "RB-02B", cat: "Shaders & Typography", mech: "Curated editorial & geometric open-source font specimen switcher", fit: "Luxury Editorial Microsites & Cultural Archives" },
+  "DejzNTBMpTQ": { id: "RB-08B", anchor: "RB-08B", cat: "Landing Pages & 3D Heroes", mech: "Infinite design canvas & DESIGN.md specification generator", fit: "Client Pitch Comparisons & Spec Redesign Demos" },
+  "DehZDbSDWxz": { id: "RB-03B", anchor: "RB-03B", cat: "Shaders & Typography", mech: "66 production DESIGN.md token palettes (Linear, Stripe, Ferrari, Vercel)", fit: "Rapid Brand Theme Switching for Outbound Spec Demos" },
+  "Dd2IEVjL1-_": { id: "RB-11B", anchor: "RB-11B", cat: "Cards & Checkouts", mech: "Anti-AI-slop crisp 1px border & Linear/Raycast command palette (⌘K)", fit: "B2B SaaS & Executive Dashboards" },
+  "Ddx-cbVnEVA": { id: "RB-04B", anchor: "RB-04B", cat: "Shaders & Typography", mech: "Interactive WebGL/Canvas particle & shader primitives from top GitHub repos", fit: "Red Banana Labs R&D Demonstrations" },
+  "DdoV5mik0du": { id: "RB-07B", anchor: "RB-07B", cat: "Shaders & Typography", mech: "Deterministic frame-accurate kinetic typography scrubber (000f-180f @ 60fps)", fit: "@redbananatech & @onemoreobject Automated Video Reels" },
   "RB_TEARDOWN": { id: "RB-08", anchor: "RB-08", cat: "Landing Pages & 3D Heroes", mech: "Interactive drag-curtain comparing Legacy 2014 Flat HTML vs Red Banana 3D Spatial WebGL", fit: "Outbound B2B Website Teardown Pitch Demos (Rs 1.5L-3.5L Deals)" },
   "RB_SCULPT3D": { id: "RB-09", anchor: "RB-09", cat: "Landing Pages & 3D Heroes", mech: "Real-centimetre 3D bronze sculpture scale comparator (33cm to 125cm vs 170cm human reference)", fit: "K R Nariman 3D Gallery, Karkhana Sculptures, One More Object" },
   "WBY_IGLOO": { id: "WBY-01", anchor: "WBY-01", cat: "Webby Winners", mech: "2-colour slate/ice palette (#b6bac5 / #383e4e) + frost & chromatic aberration scene transition", fit: "3D Luxury & Collectibles Showcases (Webby 2026 Visual Design Winner)" },
@@ -519,6 +519,10 @@ const REPLICA_MAP = {
 document.addEventListener("DOMContentLoaded", () => {
   const toast = document.getElementById("copyToast");
   const shortlist = new Set();
+  try {
+    const saved = JSON.parse(localStorage.getItem("rb_vault_shortlist") || "[]");
+    if (Array.isArray(saved)) saved.forEach((item) => shortlist.add(String(item)));
+  } catch (_) {}
   const shortlistCountEl = document.getElementById("shortlistCount");
 
   function showToast(msg) {
@@ -531,7 +535,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateShortlistUI() {
     if (shortlistCountEl) shortlistCountEl.textContent = String(shortlist.size);
+    try {
+      localStorage.setItem("rb_vault_shortlist", JSON.stringify(Array.from(shortlist)));
+    } catch (_) {}
   }
+  updateShortlistUI();
 
   // 0. Client Password Gate & Shareable Client Link
   const gateOverlay = document.getElementById("clientGateOverlay");
@@ -1843,4 +1851,137 @@ document.addEventListener("DOMContentLoaded", () => {
       showToast(`Trip Plan (${selectedPin}) sent to AI Concierge!`);
     });
   }
+
+  // =========================================================================
+  // 9 DEDICATED 1-TO-1 LIVE STAGE HANDLERS (CTL-03B, NAV-10, RB-02B..RB-11B)
+  // =========================================================================
+
+  // CTL-03B: 3D Animated Liquid Jelly Audio/Video Scrubber
+  const ctl03bRange = document.getElementById("ctl03bRange");
+  const ctl03bFill = document.getElementById("ctl03bFill");
+  const ctl03bVal = document.getElementById("ctl03bVal");
+  if (ctl03bRange && ctl03bFill) {
+    ctl03bRange.addEventListener("input", () => {
+      const v = Number(ctl03bRange.value) || 50;
+      ctl03bFill.style.width = `${v}%`;
+      const stretch = (1 + Math.abs(v - 50) / 140).toFixed(2);
+      if (ctl03bVal) ctl03bVal.textContent = `${v} dB • ${stretch}x Stretch`;
+    });
+  }
+
+  // NAV-10: 14 Stylish Tab Navigation Bar Styles Switcher
+  const nav10CycleBtn = document.getElementById("nav10CycleBtn");
+  const nav10StyleLabel = document.getElementById("nav10StyleLabel");
+  const nav10PreviewBar = document.getElementById("nav10PreviewBar");
+  const nav10Styles = [
+    { name: "STYLE 01 / 14: FLOATING NEON PILL", radius: "999px", border: "#38d6ff", bg: "#090b10" },
+    { name: "STYLE 02 / 14: BRUTALIST SHARP SLAB", radius: "4px", border: "#a8ff35", bg: "#111827" },
+    { name: "STYLE 03 / 14: LIQUID GLASS CAPSULE", radius: "22px", border: "#f472b6", bg: "rgba(244,114,182,0.14)" },
+    { name: "STYLE 04 / 14: AMBER GOLD DOCK", radius: "14px", border: "#ff9d2e", bg: "#1c140a" }
+  ];
+  let n10Idx = 0;
+  if (nav10CycleBtn && nav10PreviewBar) {
+    nav10CycleBtn.addEventListener("click", () => {
+      n10Idx = (n10Idx + 1) % nav10Styles.length;
+      const st = nav10Styles[n10Idx];
+      if (nav10StyleLabel) nav10StyleLabel.textContent = st.name;
+      nav10PreviewBar.style.borderRadius = st.radius;
+      nav10PreviewBar.style.borderColor = st.border;
+      nav10PreviewBar.style.background = st.bg;
+    });
+    nav10PreviewBar.querySelectorAll(".font-chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        nav10PreviewBar.querySelectorAll(".font-chip").forEach((c) => c.classList.remove("active"));
+        chip.classList.add("active");
+      });
+    });
+  }
+
+  // RB-02B: 6 Free Editorial Display Fonts Specimen Switcher
+  const rb02bSpecimen = document.getElementById("rb02bSpecimen");
+  document.querySelectorAll("#rb02bChips .font-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll("#rb02bChips .font-chip").forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      if (rb02bSpecimen) {
+        rb02bSpecimen.textContent = chip.getAttribute("data-sample") || "HERITAGE & HAUTE COUTURE";
+        rb02bSpecimen.style.fontFamily = chip.getAttribute("data-font") || "'Syne', sans-serif";
+      }
+    });
+  });
+
+  // RB-03B: VoltAgent 66 Brand DESIGN.md Token Switcher
+  const rb03bTokenBox = document.getElementById("rb03bTokenBox");
+  const rb03bBrandName = document.getElementById("rb03bBrandName");
+  const rb03bHex = document.getElementById("rb03bHex");
+  document.querySelectorAll("#rb03bBrands .font-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll("#rb03bBrands .font-chip").forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      if (rb03bBrandName) rb03bBrandName.textContent = "DESIGN.MD: " + (chip.getAttribute("data-brand") || "");
+      if (rb03bHex) rb03bHex.textContent = chip.getAttribute("data-hex") || "";
+      if (rb03bTokenBox) rb03bTokenBox.style.borderColor = chip.getAttribute("data-border") || "#6366f1";
+    });
+  });
+
+  // RB-04B: Viral Open-Source Design & WebGL GitHub Repo Deck
+  const rb04bRepoStat = document.getElementById("rb04bRepoStat");
+  document.querySelectorAll("#rb04bRepos .font-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll("#rb04bRepos .font-chip").forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      if (rb04bRepoStat) rb04bRepoStat.textContent = chip.getAttribute("data-repo") || "";
+    });
+  });
+
+  // RB-07B: HeyGen Hyperframes Deterministic 60FPS Scrubber
+  const rb07bFrameRange = document.getElementById("rb07bFrameRange");
+  const rb07bFrameReadout = document.getElementById("rb07bFrameReadout");
+  const rb07bStageText = document.getElementById("rb07bStageText");
+  if (rb07bFrameRange) {
+    rb07bFrameRange.addEventListener("input", () => {
+      const f = Number(rb07bFrameRange.value) || 0;
+      const sec = (f / 60).toFixed(2).padStart(5, "0");
+      if (rb07bFrameReadout) {
+        rb07bFrameReadout.textContent = `FRAME ${String(f).padStart(3, "0")} / 180 • ${sec}s @ 60FPS DETERMINISTIC`;
+      }
+      if (rb07bStageText) {
+        rb07bStageText.style.transform = `scale(${(0.92 + (f / 180) * 0.16).toFixed(2)})`;
+      }
+    });
+  }
+
+  // RB-08B: Google Stitch Infinite Canvas & DESIGN.md Exporter
+  const rb08bStitchStatus = document.getElementById("rb08bStitchStatus");
+  document.querySelectorAll("#rb08bZoomRow .font-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll("#rb08bZoomRow .font-chip").forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      if (rb08bStitchStatus) {
+        rb08bStitchStatus.textContent = "INFINITE CANVAS ZOOM: " + (chip.getAttribute("data-zoom") || "");
+      }
+    });
+  });
+
+  // RB-09B: Bruno Simon 3D Isometric Plinth & Orbit Turntable
+  const rb09bSpinBtn = document.getElementById("rb09bSpinBtn");
+  const rb09bCube = document.getElementById("rb09bCube");
+  let plinthDeg = 0;
+  if (rb09bSpinBtn && rb09bCube) {
+    rb09bSpinBtn.addEventListener("click", () => {
+      plinthDeg = (plinthDeg + 45) % 360;
+      rb09bCube.style.transform = `perspective(400px) rotateY(${plinthDeg}deg) rotateX(12deg)`;
+      rb09bCube.textContent = `3D PLINTH ${plinthDeg}°`;
+    });
+  }
+
+  // RB-11B: Uncodixfy Anti-AI-Slop Command Palette (⌘K)
+  const rb11bCmdOut = document.getElementById("rb11bCmdOut");
+  document.querySelectorAll("#rb11bCmdRow .font-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll("#rb11bCmdRow .font-chip").forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      if (rb11bCmdOut) rb11bCmdOut.textContent = chip.getAttribute("data-cmd") || "";
+    });
+  });
 });
