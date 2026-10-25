@@ -502,6 +502,118 @@ const EMBEDDED_CATALOG = [
     "href": "https://obys.agency/",
     "title": "Obys Agency (Awwwards SOTD): 12-Column Swiss Editorial Grid & Baseline Overlay",
     "thumb_file": "72_AWW_OBYS.jpg"
+  },
+  {
+    "index": 73,
+    "shortcode": "LND_PALACE",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-09",
+    "title": "Royal Heritage Palace 3D Courtyard Lighting & Suite Booking Hero (Dawn / Golden Hour / Night)",
+    "thumb_file": "73_LND_PALACE.jpg"
+  },
+  {
+    "index": 74,
+    "shortcode": "LND_MUSEUM",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-10",
+    "title": "Museum 360° Bronze Pedestal Turntable & Gallery Spotlight Hero (K R Nariman / Museum Mosaic)",
+    "thumb_file": "74_LND_MUSEUM.jpg"
+  },
+  {
+    "index": 75,
+    "shortcode": "LND_ARTISAN",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-11",
+    "title": "Karkhana Master Artisan & Handloom Provenance Passport Hero (₹999 / ₹2,499 / Collector Tiers)",
+    "thumb_file": "75_LND_ARTISAN.jpg"
+  },
+  {
+    "index": 76,
+    "shortcode": "LND_AISA",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-12",
+    "title": "AISA Private AI Concierge & Sovereign Wealth Terminal Hero (Jet / Fine Art / Sanctuary Dispatch)",
+    "thumb_file": "76_LND_AISA.jpg"
+  },
+  {
+    "index": 77,
+    "shortcode": "LND_ARCH",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-13",
+    "title": "3D Architectural Villa Floorplan & Multi-Level Elevation Switcher Hero (Sq.Ft & Material HUD)",
+    "thumb_file": "77_LND_ARCH.jpg"
+  },
+  {
+    "index": 78,
+    "shortcode": "LND_CHEF",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-14",
+    "title": "Culinary Overhead Table Spotlight & Ceramic Glaze Switcher Hero (Chef Designs / Fine Dining)",
+    "thumb_file": "78_LND_CHEF.jpg"
+  },
+  {
+    "index": 79,
+    "shortcode": "LND_IND",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-15",
+    "title": "Industrial Heavy Machinery CAD Blueprint X-Ray Scanner Hero (Rashmi Alloy vs Wireframe)",
+    "thumb_file": "79_LND_IND.jpg"
+  },
+  {
+    "index": 80,
+    "shortcode": "LND_GLOBE",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-16",
+    "title": "3D Global Route Arc & Edge Telemetry Node Hero (DEL-LHR / BOM-HND / BLR-SFO)",
+    "thumb_file": "80_LND_GLOBE.jpg"
+  },
+  {
+    "index": 81,
+    "shortcode": "LND_VISION",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-17",
+    "title": "Apple VisionOS Spatial Glass Multi-Window Workspace Hero (Z+30px Depth Focus)",
+    "thumb_file": "81_LND_VISION.jpg"
+  },
+  {
+    "index": 82,
+    "shortcode": "LND_SWISS",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-18",
+    "title": "Swiss Brutalist Editorial Grid & Expanding 60FPS Showreel Aperture Hero",
+    "thumb_file": "82_LND_SWISS.jpg"
+  },
+  {
+    "index": 83,
+    "shortcode": "LND_ELIXIR",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-19",
+    "title": "Luxury Botanical Fragrance Olfactive Pyramid & Aura Mist Hero (Top / Heart / Base Notes)",
+    "thumb_file": "83_LND_ELIXIR.jpg"
+  },
+  {
+    "index": 84,
+    "shortcode": "LND_PITCH",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-20",
+    "title": "Outbound B2B Website Teardown Split-Curtain & Retainer Closer Hero (+310% Conversion Lift)",
+    "thumb_file": "84_LND_PITCH.jpg"
+  },
+  {
+    "index": 85,
+    "shortcode": "LND_FINTECH",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-21",
+    "title": "Fintech & Executive SaaS Live ARR Telemetry Bento Hero (MRR / QRR / ARR Toggle)",
+    "thumb_file": "85_LND_FINTECH.jpg"
+  },
+  {
+    "index": 86,
+    "shortcode": "LND_CLINIC",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-22",
+    "title": "Clinical Longevity & Aesthetic Specialist Glassmorphic Booking Hero (Dr Sneha / Healthcare)",
+    "thumb_file": "86_LND_CLINIC.jpg"
+  },
+  {
+    "index": 87,
+    "shortcode": "LND_PRINT3D",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-23",
+    "title": "3D Printed Heritage Sculpture & Filament Customizer Hero (One More Object / @indiain3d)",
+    "thumb_file": "87_LND_PRINT3D.jpg"
+  },
+  {
+    "index": 88,
+    "shortcode": "LND_TUNNEL",
+    "href": "https://redbananatechsolutions.in/ui-vault/#LND-24",
+    "title": "WebGL Z-Axis Camera Fly-Through Tunnel & 4-Chapter Storyboard Hero (0m to -300m)",
+    "thumb_file": "88_LND_TUNNEL.jpg"
   }
 ];
 
@@ -577,7 +689,23 @@ const REPLICA_MAP = {
   "AWW_DOGSTUDIO": { id: "AWW-05", anchor: "AWW-05", cat: "Awwwards SOTD", mech: "Hardware-accelerated clip-path: circle() iris portal expanding from click coordinates", fit: "Showreel Modals, Before/After Scene Transitions (Dogstudio Style)" },
   "AWW_VERCEL3D": { id: "AWW-06", anchor: "AWW-06", cat: "Awwwards SOTD", mech: "Interactive preserve-3d isometric exploded-view stack of DOM, Shader & HUD layers", fit: "Architecture Diagrams, Technical Deep-Dives, SaaS Heroes (Vercel Style)" },
   "AWW_PRICING": { id: "AWW-07", anchor: "AWW-07", cat: "Awwwards SOTD", mech: "Live multi-currency (INR ₹ / USD $ / EUR €) scope & page-count ROI estimator", fit: "Agency Proposal Pages, B2B Outbound Deal Closers" },
-  "AWW_OBYS": { id: "AWW-08", anchor: "AWW-08", cat: "Awwwards SOTD", mech: "Exposed 12-column Swiss architectural grid & 8px baseline rhythm toggle overlay", fit: "Design Systems, Editorial Portfolios & Architecture Studios (Obys Style)" }
+  "AWW_OBYS": { id: "AWW-08", anchor: "AWW-08", cat: "Awwwards SOTD", mech: "Exposed 12-column Swiss architectural grid & 8px baseline rhythm toggle overlay", fit: "Design Systems, Editorial Portfolios & Architecture Studios (Obys Style)" },
+  "LND_PALACE": { id: "LND-09", anchor: "LND-09", cat: "Landing Pages & 3D Heroes", mech: "Time-of-day atmospheric shader switcher (Dawn / Golden Hour / Torchlight Night) + suite rate HUD", fit: "Luxury Heritage Hotels, Rajasthan Palaces & Eco-Resorts" },
+  "LND_MUSEUM": { id: "LND-10", anchor: "LND-10", cat: "Landing Pages & 3D Heroes", mech: "Interactive 360° bronze pedestal turntable scrubber + gallery spotlight toggle + real-cm scale", fit: "K R Nariman 3D Bronzes, Museum Mosaic, Cultural Foundations" },
+  "LND_ARTISAN": { id: "LND-11", anchor: "LND-11", cat: "Landing Pages & 3D Heroes", mech: "Shilp Guru Provenance Passport seal + accessible price-pyramid switcher (₹999 / ₹2,499 / ₹28K)", fit: "Karkhana Artisan Platform, Handloom Haat, GI Craft Storefronts" },
+  "LND_AISA": { id: "LND-12", anchor: "LND-12", cat: "Landing Pages & 3D Heroes", mech: "Sovereign AI command prompt pills with instant aviation, fine art & luxury sanctuary synthesis", fit: "AISA Private Concierge, Family Office & Executive AI Portals" },
+  "LND_ARCH": { id: "LND-13", anchor: "LND-13", cat: "Landing Pages & 3D Heroes", mech: "Multi-level architectural elevation switcher (Roof / Living / Pool Deck) with sq.ft & material specs", fit: "Luxury Real Estate Developers, Architecture Studios, Villa Launches" },
+  "LND_CHEF": { id: "LND-14", anchor: "LND-14", cat: "Landing Pages & 3D Heroes", mech: "Pointer-tracked overhead dining table spotlight + ceramic kiln glaze switcher (Obsidian / Celadon)", fit: "Chef Designs Tableware, Michelin Restaurants & Artisanal F&B" },
+  "LND_IND": { id: "LND-15", anchor: "LND-15", cat: "Landing Pages & 3D Heroes", mech: "Interactive CAD X-Ray slider peeling solid ductile-iron hull into glowing cyan blueprint internals", fit: "Rashmi Industrial Machinery, Aerospace, Automotive & B2B Manufacturing" },
+  "LND_GLOBE": { id: "LND-16", anchor: "LND-16", cat: "Landing Pages & 3D Heroes", mech: "Orbital hub route switcher (DEL-LHR, BOM-HND, BLR-SFO) with live latency & distance telemetry", fit: "Global Supply Chain, Cloud Infrastructure & Aviation Networks" },
+  "LND_VISION": { id: "LND-17", anchor: "LND-17", cat: "Landing Pages & 3D Heroes", mech: "3 floating VisionOS translucent glass windows with Z+30px depth focus & specular rim glow", fit: "Spatial Computing Apps, AI Design Tools & Flagship Product Demos" },
+  "LND_SWISS": { id: "LND-18", anchor: "LND-18", cat: "Landing Pages & 3D Heroes", mech: "High-contrast Swiss brutalist display grid with 1-click expanding 4K 60FPS showreel aperture", fit: "Creative Agencies, Film Production Houses & Design Studios" },
+  "LND_ELIXIR": { id: "LND-19", anchor: "LND-19", cat: "Landing Pages & 3D Heroes", mech: "Olfactive pyramid note switcher (Bergamot / Damask Rose / Mysore Oud) morphing bottle aura mist", fit: "Luxury D2C Perfumery, Clean Beauty & Botanical Apothecary Brands" },
+  "LND_PITCH": { id: "LND-20", anchor: "LND-20", cat: "Landing Pages & 3D Heroes", mech: "Live split-curtain comparing Legacy 2D Flat Site vs Red Banana 3D WebGL (+310% conversion lift)", fit: "Outbound B2B Website Teardown Reels & Cold Founder Pitch Pages" },
+  "LND_FINTECH": { id: "LND-21", anchor: "LND-21", cat: "Landing Pages & 3D Heroes", mech: "Real-time treasury ledger hero with Monthly MRR / Quarterly QRR / Annual ARR telemetry switcher", fit: "Fintech Platforms, B2B SaaS Dashboards & Payment Gateways" },
+  "LND_CLINIC": { id: "LND-22", anchor: "LND-22", cat: "Landing Pages & 3D Heroes", mech: "Calm clinical glassmorphism hero with longevity/aesthetic protocol switcher & live slot badge", fit: "Dr Sneha Clinic, Aesthetic Dermatology & Longevity Medicine" },
+  "LND_PRINT3D": { id: "LND-23", anchor: "LND-23", cat: "Landing Pages & 3D Heroes", mech: "Bambu P1S filament shader switcher (Terracotta PLA / Bronze Silk / Marble) + ₹1,999 UPI badge", fit: "One More Object (@indiain3d) 3D Printed Heritage Storefront" },
+  "LND_TUNNEL": { id: "LND-24", anchor: "LND-24", cat: "Landing Pages & 3D Heroes", mech: "Z-axis camera depth scrubber (0m to -300m) flying through 4 nested perspective story chapters", fit: "Immersive Annual Reports, Scrollytelling Microsites & Brand Timelines" }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -2310,6 +2438,269 @@ document.addEventListener("DOMContentLoaded", () => {
       awwSwissStage.classList.toggle("show-grid");
       const on = awwSwissStage.classList.contains("show-grid");
       awwGridToggleBtn.textContent = on ? "📏 Hide 12-Col Grid" : "📏 Show 12-Col Grid";
+    });
+  }
+
+  // =========================================================================
+  // SECTION 04 EXPANSION: SUB-FILTER & 16 NEW LANDING PAGE HERO STAGES (LND-09..24)
+  // =========================================================================
+
+  // Section 04 Sub-Filter Pills (All 24 / Luxury / Heritage / SaaS / Spatial / Editorial)
+  const lndSubPills = document.querySelectorAll("#lndSubFilterPills .filter-pill");
+  const lndCards = document.querySelectorAll("#landingGridMain .comp-card[data-lnd-group]");
+  lndSubPills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+      lndSubPills.forEach((p) => p.classList.remove("active"));
+      pill.classList.add("active");
+      const grp = pill.getAttribute("data-lnd-filter") || "all";
+      lndCards.forEach((card) => {
+        const cGrp = card.getAttribute("data-lnd-group") || "";
+        card.style.display = grp === "all" || grp === cGrp ? "" : "none";
+      });
+    });
+  });
+
+  // LND-09: Royal Heritage Palace 3D Courtyard Lighting Switcher
+  const lnd09PalaceHero = document.getElementById("lnd09PalaceHero");
+  const lnd09Title = document.getElementById("lnd09Title");
+  const lnd09RateBadge = document.getElementById("lnd09RateBadge");
+  document.querySelectorAll("#lnd09TimeRow .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd09TimeRow .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd09PalaceHero) {
+        lnd09PalaceHero.style.setProperty("--hero-bg", btn.getAttribute("data-bg") || "");
+        lnd09PalaceHero.style.setProperty("--hero-acc", btn.getAttribute("data-acc") || "#f59e0b");
+      }
+      if (lnd09Title) lnd09Title.textContent = btn.getAttribute("data-title") || "";
+      if (lnd09RateBadge) lnd09RateBadge.textContent = btn.getAttribute("data-rate") || "";
+    });
+  });
+
+  // LND-10: Museum 360° Bronze Pedestal Turntable & Gallery Spotlight
+  const lnd10TurntableRange = document.getElementById("lnd10TurntableRange");
+  const lnd10AngleText = document.getElementById("lnd10AngleText");
+  const lnd10SculptOrb = document.getElementById("lnd10SculptOrb");
+  const lnd10LightBtn = document.getElementById("lnd10LightBtn");
+  if (lnd10TurntableRange && lnd10SculptOrb) {
+    lnd10TurntableRange.addEventListener("input", () => {
+      const deg = Number(lnd10TurntableRange.value) || 0;
+      lnd10SculptOrb.style.transform = `perspective(400px) rotateY(${(deg - 180) / 5}deg)`;
+      if (lnd10AngleText) {
+        lnd10AngleText.textContent = `ROTATION: ${String(deg).padStart(3, "0")}° • 68 CM`;
+      }
+    });
+  }
+  if (lnd10LightBtn && lnd10SculptOrb) {
+    lnd10LightBtn.addEventListener("click", () => {
+      lnd10SculptOrb.classList.toggle("spot-on");
+      const on = lnd10SculptOrb.classList.contains("spot-on");
+      lnd10LightBtn.textContent = on ? "✨ Spotlight ON" : "💡 Gallery Spot";
+    });
+  }
+
+  // LND-11: Karkhana Master Artisan & Handloom Provenance Hero
+  const lnd11CraftTitle = document.getElementById("lnd11CraftTitle");
+  const lnd11PriceTag = document.getElementById("lnd11PriceTag");
+  document.querySelectorAll("#lnd11TierRow .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd11TierRow .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd11CraftTitle) lnd11CraftTitle.textContent = btn.getAttribute("data-title") || "";
+      if (lnd11PriceTag) lnd11PriceTag.textContent = btn.getAttribute("data-price") || "";
+    });
+  });
+
+  // LND-12: AISA Private AI Concierge & Wealth Terminal Hero
+  const lnd12Response = document.getElementById("lnd12Response");
+  document.querySelectorAll("#lnd12Prompts .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd12Prompts .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd12Response) lnd12Response.textContent = btn.getAttribute("data-ans") || "";
+    });
+  });
+
+  // LND-13: 3D Architectural Villa Floorplan & Multi-Level Elevation Hero
+  const lnd13FloorName = document.getElementById("lnd13FloorName");
+  const lnd13Sqft = document.getElementById("lnd13Sqft");
+  const lnd13MatSpec = document.getElementById("lnd13MatSpec");
+  document.querySelectorAll("#lnd13Floors .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd13Floors .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd13FloorName) lnd13FloorName.textContent = btn.getAttribute("data-name") || "";
+      if (lnd13Sqft) lnd13Sqft.textContent = btn.getAttribute("data-sqft") || "";
+      if (lnd13MatSpec) lnd13MatSpec.textContent = btn.getAttribute("data-mat") || "";
+    });
+  });
+
+  // LND-14: Culinary Overhead Spotlight & Ceramic Glaze Hero
+  const lnd14ChefHero = document.getElementById("lnd14ChefHero");
+  const lnd14GlazeBadge = document.getElementById("lnd14GlazeBadge");
+  const lnd14DishTitle = document.getElementById("lnd14DishTitle");
+  if (lnd14ChefHero) {
+    lnd14ChefHero.addEventListener("pointermove", (e) => {
+      const rect = lnd14ChefHero.getBoundingClientRect();
+      const cx = Math.round(((e.clientX - rect.left) / (rect.width || 1)) * 100);
+      const cy = Math.round(((e.clientY - rect.top) / (rect.height || 1)) * 100);
+      lnd14ChefHero.style.setProperty("--cx", `${cx}%`);
+      lnd14ChefHero.style.setProperty("--cy", `${cy}%`);
+    });
+  }
+  document.querySelectorAll("#lnd14Glazes .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd14Glazes .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd14GlazeBadge) lnd14GlazeBadge.textContent = btn.getAttribute("data-glaze") || "";
+      if (lnd14DishTitle) lnd14DishTitle.textContent = btn.getAttribute("data-dish") || "";
+    });
+  });
+
+  // LND-15: Industrial Heavy Machinery CAD X-Ray Scanner Hero
+  const lnd15IndHero = document.getElementById("lnd15IndHero");
+  const lnd15XrayRange = document.getElementById("lnd15XrayRange");
+  const lnd15XrayVal = document.getElementById("lnd15XrayVal");
+  if (lnd15XrayRange && lnd15IndHero) {
+    lnd15XrayRange.addEventListener("input", () => {
+      const v = Number(lnd15XrayRange.value) || 50;
+      lnd15IndHero.style.setProperty("--xray", `${v}%`);
+      if (lnd15XrayVal) lnd15XrayVal.textContent = `X-RAY SCAN: ${v}%`;
+    });
+  }
+
+  // LND-16: 3D Global Route Arc & Telemetry Node Hero
+  const lnd16RouteTitle = document.getElementById("lnd16RouteTitle");
+  const lnd16Latency = document.getElementById("lnd16Latency");
+  document.querySelectorAll("#lnd16Nodes .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd16Nodes .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd16RouteTitle) lnd16RouteTitle.textContent = btn.getAttribute("data-route") || "";
+      if (lnd16Latency) lnd16Latency.textContent = btn.getAttribute("data-lat") || "";
+    });
+  });
+
+  // LND-17: Apple VisionOS Spatial Glass Multi-Window Hero
+  const lnd17WinLabel = document.getElementById("lnd17WinLabel");
+  document.querySelectorAll("#lnd17WinRow .lnd-vision-win").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd17WinRow .lnd-vision-win").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd17WinLabel) lnd17WinLabel.textContent = btn.getAttribute("data-win") || "";
+    });
+  });
+
+  // LND-18: Brutalist Swiss Kinetic Poster & Showreel Aperture Hero
+  const lnd18ReelBtn = document.getElementById("lnd18ReelBtn");
+  const lnd18ReelState = document.getElementById("lnd18ReelState");
+  const lnd18Headline = document.getElementById("lnd18Headline");
+  if (lnd18ReelBtn) {
+    let reelExpanded = false;
+    lnd18ReelBtn.addEventListener("click", () => {
+      reelExpanded = !reelExpanded;
+      if (lnd18ReelState) {
+        lnd18ReelState.textContent = reelExpanded ? "REEL: PLAYING 60FPS APERTURE" : "REEL: DOCKED (4K 60FPS)";
+      }
+      if (lnd18Headline) {
+        lnd18Headline.textContent = reelExpanded ? "🎬 SHOWREEL 2026 ACTIVE" : "FORM FOLLOWS EMOTION.";
+      }
+      lnd18ReelBtn.textContent = reelExpanded ? "✕ Collapse Showreel Aperture" : "▶ Expand Fullscreen Showreel Aperture";
+    });
+  }
+
+  // LND-19: Luxury Botanical Fragrance Olfactive Pyramid Hero
+  const lnd19ElixirHero = document.getElementById("lnd19ElixirHero");
+  const lnd19NoteBadge = document.getElementById("lnd19NoteBadge");
+  const lnd19ScentTitle = document.getElementById("lnd19ScentTitle");
+  document.querySelectorAll("#lnd19Notes .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd19Notes .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd19ElixirHero) lnd19ElixirHero.style.setProperty("--hero-bg", btn.getAttribute("data-bg") || "");
+      if (lnd19NoteBadge) lnd19NoteBadge.textContent = btn.getAttribute("data-note") || "";
+      if (lnd19ScentTitle) lnd19ScentTitle.textContent = btn.getAttribute("data-scent") || "";
+    });
+  });
+
+  // LND-20: Outbound B2B Website Teardown Split-Curtain Hero
+  const lnd20PitchHero = document.getElementById("lnd20PitchHero");
+  const lnd20PitchRange = document.getElementById("lnd20PitchRange");
+  const lnd20PitchHeadline = document.getElementById("lnd20PitchHeadline");
+  const lnd20BookAuditBtn = document.getElementById("lnd20BookAuditBtn");
+  if (lnd20PitchRange && lnd20PitchHero) {
+    lnd20PitchRange.addEventListener("input", () => {
+      const split = Number(lnd20PitchRange.value) || 35;
+      lnd20PitchHero.style.setProperty("--pitch-split", `${split}%`);
+      if (lnd20PitchHeadline) {
+        lnd20PitchHeadline.textContent = `${split}% Legacy 2D vs ${100 - split}% Red Banana 3D WebGL`;
+      }
+    });
+  }
+  if (lnd20BookAuditBtn) {
+    lnd20BookAuditBtn.addEventListener("click", () => {
+      lnd20BookAuditBtn.textContent = "✅ Retainer Proposal Locked!";
+      showToast("B2B 3D Teardown Retainer Brief Copied!");
+    });
+  }
+
+  // LND-21: Fintech & SaaS Revenue Command Bento Hero
+  const lnd21ArrVal = document.getElementById("lnd21ArrVal");
+  const lnd21Growth = document.getElementById("lnd21Growth");
+  document.querySelectorAll("#lnd21Periods .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd21Periods .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd21ArrVal) lnd21ArrVal.textContent = btn.getAttribute("data-arr") || "";
+      if (lnd21Growth) lnd21Growth.textContent = btn.getAttribute("data-yoy") || "";
+    });
+  });
+
+  // LND-22: Aesthetic & Clinical Longevity Specialist Hero
+  const lnd22ProtoTitle = document.getElementById("lnd22ProtoTitle");
+  const lnd22SlotBadge = document.getElementById("lnd22SlotBadge");
+  document.querySelectorAll("#lnd22Protocols .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd22Protocols .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd22ProtoTitle) lnd22ProtoTitle.textContent = btn.getAttribute("data-proto") || "";
+      if (lnd22SlotBadge) lnd22SlotBadge.textContent = btn.getAttribute("data-slot") || "";
+    });
+  });
+
+  // LND-23: 3D Printed Heritage Sculpture & Filament Customizer Hero
+  const lnd23MatName = document.getElementById("lnd23MatName");
+  const lnd23Price = document.getElementById("lnd23Price");
+  document.querySelectorAll("#lnd23Filaments .font-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#lnd23Filaments .font-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (lnd23MatName) lnd23MatName.textContent = btn.getAttribute("data-mat") || "";
+      if (lnd23Price) lnd23Price.textContent = btn.getAttribute("data-price") || "";
+    });
+  });
+
+  // LND-24: Z-Axis Camera Tunnel & Scroll-Chapter Storyboard Hero
+  const lnd24DepthRange = document.getElementById("lnd24DepthRange");
+  const lnd24DepthReadout = document.getElementById("lnd24DepthReadout");
+  const lnd24ChapterTitle = document.getElementById("lnd24ChapterTitle");
+  const lnd24TunnelBox = document.getElementById("lnd24TunnelBox");
+  const tunnelChapters = [
+    "CHAPTER 01: HERITAGE ORIGIN",
+    "CHAPTER 02: THE SPATIAL WEB",
+    "CHAPTER 03: 60FPS SHADER CORE",
+    "CHAPTER 04: FUTURE HORIZON"
+  ];
+  if (lnd24DepthRange) {
+    lnd24DepthRange.addEventListener("input", () => {
+      const z = Number(lnd24DepthRange.value) || 0;
+      const cIdx = Math.min(3, Math.floor(z / 76));
+      if (lnd24DepthReadout) lnd24DepthReadout.textContent = `Z-DEPTH: -${z}m • CH 0${cIdx + 1}`;
+      if (lnd24ChapterTitle) lnd24ChapterTitle.textContent = tunnelChapters[cIdx];
+      if (lnd24TunnelBox) {
+        const scale = (0.94 + ((z % 76) / 76) * 0.12).toFixed(2);
+        lnd24TunnelBox.style.transform = `scale(${scale})`;
+      }
     });
   }
 });
